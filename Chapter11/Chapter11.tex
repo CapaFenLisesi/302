@@ -1,0 +1,539 @@
+\section{Electromagnetic Waves}\label{s11}
+\subsection{Maxwell's Equations}
+In the latter half of the nineteenth century, the Scottish physicist
+James Clerk Maxwell demonstrated that all  previously
+established experimental facts regarding electric and magnetic
+fields could be summed up in just {\em four}\/ equations. Nowadays,
+these equations are generally known as {\em Maxwell's equations}.
+
+The first equation is simply  Gauss'
+law (see Sect.~\ref{sgauss}). This
+equation describes how electric charges generate  electric fields.
+Gauss' law states that:
+\begin{quote}
+{\sf The electric flux through any closed surface is equal to the total
+charge enclosed by the surface, divided by $\epsilon_0$.}
+\end{quote}
+This can be written mathematically  as
+\begin{equation}
+\oint_S {\bf E}\cdot d{\bf S} = \frac{Q}{\epsilon_0},
+\end{equation}
+where $S$ is a closed surface enclosing the charge $Q$. The above
+expression can also be written
+\begin{equation}\label{em1}
+\oint_S {\bf E}\cdot d{\bf S}= \frac{1}{\epsilon_0}\int_V \rho\,dV,
+\end{equation}
+where $V$ is a volume bounded by the surface $S$, and $\rho$
+is the {\em charge density}: {\em i.e.}, the electric charge
+per unit volume.
+
+The second equation is the magnetic equivalent of Gauss' law
+(see Sect.~\ref{s8.10}). This equation describes how the non-existence of
+magnetic monopoles causes magnetic field-lines to form closed loops. Gauss' law for magnetic fields states that:
+\begin{quote}
+{\sf The magnetic flux through any closed surface is equal to zero.}
+\end{quote}
+This can be written mathematically as 
+\begin{equation}\label{em2}
+\int_S {\bf B} \cdot d{\bf S} = 0,
+\end{equation}
+where $S$ is a closed surface.
+
+The third equation is  Faraday's law (see Sect.~\ref{s9.3}). This equation describes
+how changing magnetic fields generate  electric fields. Faraday's law
+states that:
+\begin{quote}
+{\sf The line integral of the electric field around any closed loop
+is equal to minus the time rate of change of the magnetic flux
+through the loop.}
+\end{quote}
+This can be written mathematically as
+\begin{equation}\label{em3}
+\oint_C {\bf E}\cdot d {\bf S} = -\frac{d}{dt}\int_{S'} {\bf B}\cdot d {\bf S}',
+\end{equation}
+where $S'$ is a surface attached to the loop $C$.
+
+The fourth, and final, equation is Amp\`{e}re's circuital law (see Sect.~\ref{s8.7}). 
+This equation describes how  electric currents generates  magnetic fields.
+Amp\`{e}re's circuital law states that:
+\begin{quote}
+{\sf The line integral of the magnetic field around any closed loop is
+equal to $\mu_0$ times the algebraic sum of the currents which pass
+through the loop}.
+\end{quote}
+This can be written mathematically as
+\begin{equation}
+\oint_C {\bf B}\cdot d{\bf r} = \mu_0\,I,
+\end{equation}
+where $I$ is the net current flowing through loop $C$. This equation
+can also be written 
+\begin{equation}\label{em4}
+\oint_C {\bf B}\cdot d{\bf r} = \mu_0\int_{S'}{\bf j}\cdot d{\bf S}',
+\end{equation}
+where $S'$ is a surface attached to the loop $C$, and ${\bf j}$ is the
+{\em current density}: {\em i.e.}, the electrical current per unit area.
+
+When Maxwell first wrote Eqs.~(\ref{em1}), (\ref{em2}), (\ref{em3}), 
+and (\ref{em4}) he was basically 
+trying to summarize everything 
+which was known at the time about electric and magnetic fields
+in mathematical form. However, the more Maxwell looked at his
+equations, the more convinced he became that they were incomplete.
+Eventually, he proposed adding a new term, called the {\em displacement
+current}, to the right-hand side of his fourth equation. In fact, Maxwell was able
+to show that (\ref{em1}), (\ref{em2}), (\ref{em3}), 
+and (\ref{em4})  are {\em mathematically inconsistent}\/ unless
+the displacement current term is added  to Eq.~(\ref{em4}). Unfortunately,
+Maxwell's 
+demonstration of this fact  requires some advanced mathematical
+techniques  which lie well beyond the scope of this course. 
+In the following,
+we shall give a highly simplified version of his derivation of the
+missing term. 
+
+\begin{figure}[h]
+\epsfysize=2in
+\centerline{\epsffile{Chapter11/fig11.1.eps}}
+\caption{\em Circuit containing a charging capacitor.}\label{f11.1}
+\end{figure}
+
+Consider a circuit
+consisting of a parallel plate capacitor of capacitance $C$ in series with a
+resistance  $R$ and an steady emf $V$, as shown in Fig.~\ref{f11.1}. Let $A$ be the area of
+the capacitor plates, and let $d$ be their separation. Suppose that
+the switch is closed at $t=0$. The current $i$ flowing around the circuit
+starts from an initial value of $I=V/R$, and gradually decays to zero
+on the RC time of the circuit (see Sect.~\ref{s10.6}). 
+Simultaneously, the charge $q$ on the
+positive plates of the capacitor starts from zero, and gradually increases
+to a final value of $Q=C\,V$. As the charge $q$ varies, so does the
+potential
+difference $v$ between the capacitor plates, since $v=q/C$. 
+
+The electric field in the region between the plates is approximately uniform,
+directed perpendicular to the plates (running from the positively charged plate
+to the negatively charged plate), and is of magnitude $E= v/d$. It follows
+that
+\begin{equation}
+q = C\,v = C\,d\,E.
+\end{equation}
+In a time interval $dt$, the charge on the positive
+plate of the capacitor increases by an amount
+$dq = C\,d\,d E$,
+ where  $dE$ is the
+corresponding increase in the electric field-strength between the plates.
+Note that both $C$ and $d$ are time-independent quantities. It follows
+that 
+\begin{equation}
+\frac{dq}{d t} = C\,d\,\frac{dE}{dt}.
+\end{equation}
+Now, $dq/d t$ is numerically equal to the
+instantaneous current $i$ flowing around the circuit (since all of the
+charge which flows around the circuit must accumulate on the plates of
+the capacitor). Also, $C=\epsilon_0\, A/d$ for a parallel plate capacitor.
+Hence, we can write
+\begin{equation}
+i = \frac{dq}{d t} = C\,d\,\frac{d E}{dt} =\epsilon_0\,A\, \frac{d E}{d t}.
+\end{equation}
+Since the electric field $E$ is normal to the area $A$, we can also write
+\begin{equation}\label{e11.8}
+i =\epsilon_0\,A\, \frac{d E_\perp}{dt}.
+\end{equation}
+
+Equation~(\ref{e11.8}) relates the instantaneous current flowing around the
+circuit to the time rate of change of the electric field between the
+capacitor plates. According to Eq.~(\ref{em4}), the current flowing around the 
+circuit generates a magnetic field.  This field circulates around the 
+current carrying wires
+connecting the various components of the circuit. However, since
+there is no actual current flowing between the 
+plates of the capacitor,  no magnetic field is generated in this region,
+according to Eq.~(\ref{em4}). 
+Maxwell demonstrated that for reasons of  mathematical self-consistency there
+must, in fact,  be a magnetic field generated in the
+region between the plates of the capacitor.
+Furthermore, this magnetic field must be the same as that which
+would be generated if the
+current $i$ ({\em i.e.}, the same current as that which
+flows around  the rest of the circuit)
+flowed between the plates. Of course, there is no actual current flowing between
+the plates. However, there is a changing electric field. Maxwell argued that a
+changing electric field constitutes an effective current ({\em i.e.}, it
+generates a magnetic field in just the same manner as an actual current). 
+For historical reasons (which do not particularly interest us at the moment), Maxwell 
+called this type of current a {\em displacement current}. 
+Since the displacement
+current $I_D$ flowing between the plates of the capacitor must equal the
+current $i$ flowing around the rest of the circuit,  it follows from Eq.~(\ref{e11.8})
+that
+\begin{equation}\label{e11.9}
+I_D = \epsilon_0\,A\, \frac{dE_\perp}{dt}.
+\end{equation}
+
+Equation~(\ref{e11.9}) was derived for the special case of the changing electric
+field generated in the region
+between the plates of a charging parallel plate capacitor. Nevertheless, this equation turns out to be completely general. Note that
+$A\,E_\perp$ is equal to the electric flux ${\mit\Phi}_E$ between the plates of
+the capacitor. Thus, the most general expression for the displacement current
+passing through some closed loop is
+\begin{equation}
+I_D = \epsilon_0\,\frac{d{\mit\Phi}_E}{d t},
+\end{equation}
+where ${\mit\Phi}_E$ is the electric flux through the loop. 
+
+According to Maxwell's argument, a displacement current is just as effective at generating a
+magnetic field as a real current. Thus, we need to modify Amp\`{e}re's
+circuital law to take displacement currents into account. The modified
+law, which is known as the {\em Amp\`{e}re-Maxwell law}, is written
+\begin{quote}
+{\sf The line integral of the electric field around any closed loop is
+equal to $\mu_0$ times the algebraic sum of the actual currents
+and which pass
+through the loop plus $\mu_0$ times the displacement current 
+passing through the
+loop.}
+\end{quote}
+This can be written mathematically as
+\begin{equation}
+\oint_C {\bf B}\cdot d{\bf r} = \mu_0\,(I + I_D),
+\end{equation}
+where $C$ is a loop through which the electric current $I$ and the 
+displacement current $I_D$ pass. 
+This equation can also be written
+\begin{equation}\label{em5}
+\oint_C {\bf B}\cdot d{\bf r} = \mu_0\int_{S'} {\bf j} \cdot d{\bf S}'
++ \mu_0\,\epsilon_0\,\frac{d}{dt}\int_{S'} {\bf E}\cdot d{\bf S}',
+\end{equation}
+where $S'$ is a surface attached to the loop $C$.
+
+Equations (\ref{em1}), (\ref{em2}), (\ref{em3}), and (\ref{em5}) are known collectively as
+{\em Maxwell's equations}. They constitute a complete and mathematically
+self-consistent description of the behaviour of electric and magnetic
+fields. 
+
+\subsection{Electromagnetic Waves}
+One of the first 
+things that Maxwell did with his four equations, once he had obtained
+them, was to look for wave-like solutions. 
+Maxwell knew that the wave-like solutions of the equations of gas dynamics
+correspond to sound waves, and the wave-like solutions of the
+equations of fluid dynamics correspond to gravity waves in water, so
+he reasoned that if his equations possessed wave-like solutions then  these
+would correspond to a completely
+new type of wave, which he  called an {\em electromagnetic wave}. 
+
+
+Maxwell was primarily interested in electromagnetic
+waves which can propagate through a vacuum ({\em i.e.},
+a region containing no charges or currents). 
+Now, in a vacuum, Maxwell's equations
+ reduce to
+\begin{eqnarray}
+\oint_S {\bf E}\cdot d{\bf S},&= & 0,\label{emv1}\\[0.5ex]
+\oint_S {\bf B}\cdot d{\bf S} &=& 0,\label{emv2}\\[0.5ex]
+\oint_C {\bf E}\cdot d{\bf r}&=& - \frac{d}{dt}\int_{S'}{\bf B}\cdot d{\bf S}',\label{emv3}
+\\[0.5ex]
+\oint_C {\bf B}\cdot d{\bf r} &=& \mu_0\,
+\epsilon_0\,\frac{d}{dt}\int_{S'} {\bf E}\cdot d {\bf S}',\label{emv4}
+\end{eqnarray}
+where $S$ is a closed surface, and $S'$ a surface attached to some loop $C$.
+Note that, with the addition of the displacement current term
+on the right-hand side of Eq.~(\ref{emv4}), these equations
+exhibit a nice symmetry between electric and magnetic fields. 
+Unfortunately, Maxwell's mathematical proof that the above
+equations possess
+wave-like solutions lies well beyond the scope of this course. We can, nevertheless,
+still write down these solutions, and comment on them.
+
+Consider a plane electromagnetic wave propagating along the
+$z$-axis. According to Maxwell's calculations, the electric and
+magnetic fields associated with such a wave take the form
+\begin{eqnarray}\label{e11.14}
+E_x &=& E_0\,\cos[2\pi\,(z/\lambda - f\,t)],\\[0.5ex]
+B_y &=& B_0\,\cos[2\pi\,(z/\lambda-f\,t)].
+\end{eqnarray}
+Note that the fields are periodic in both time and space. 
+The
+oscillation frequency (in hertz) of the fields at a given point
+in space is $f$.
+The equation
+of a wave crest is 
+\begin{equation}\label{e11.15}
+\frac{z}{\lambda} - f\,t = N,
+\end{equation}
+where $N$ is an integer. It can be seen that the distance along the
+$z$-axis between successive wave crests is given by $\lambda$. This
+distance is conventionally termed the {\em wavelength}.
+Note that each  wave crest {\em propagates} along  
+the $z$-axis. In a time interval $dt$, the $N$th wave
+crest moves a distance $d z = \lambda\,f\,d t$,
+according to Eq.~(\ref{e11.15}). Hence, the velocity  $c = d z/d t$
+with which the wave propagates along the $z$-axis is given by
+\begin{equation}
+c = f\,\lambda.
+\end{equation}
+
+Maxwell was able to establish that electromagnetic waves possess the
+following properties:
+\begin{enumerate}
+\item The magnetic field oscillates {\em in phase} with the
+electric
+field. In other words, a wave maximum of the magnetic field always
+coincides with a wave maximum of the electric field in both time and
+space.
+\item The electric field is always perpendicular to the magnetic field, and
+both fields are directed at right-angles to the direction of propagation of
+the wave. In fact, the wave propagates in the direction ${\bf E}\times{\bf B}$. 
+Electromagnetic waves are clearly a type of {\em transverse wave}. 
+\item For a $z$-directed wave, the electric field is free
+to oscillate in {\em any}
+direction which lies in the $x$-$y$ plane. The direction in which the
+electric field oscillates is conventionally
+termed the direction of {\em polarization}
+of the wave. Thus, Eqs.~(\ref{e11.14}) represent a plane  electromagnetic wave which
+propagates along the $z$-axis, and is polarized in the $x$-direction. 
+\item The maximum amplitudes of the electric and the magnetic fields
+are related via
+\begin{equation}
+E_0= c\,B_0.
+\end{equation}
+\item There is no constraint on the possible frequency or wavelength of
+electromagnetic waves. However, the propagation velocity of
+electromagnetic waves  is {\em fixed}, and takes the value
+\begin{equation}\label{e11.18}
+c = \frac{1}{\sqrt{\mu_0\,\epsilon_0}}.
+\end{equation} 
+\end{enumerate}
+
+According to Eqs.~(\ref{emv3}) and (\ref{emv4}), a changing magnetic field generates an electric
+field, and a changing electric field generates a magnetic field. 
+Thus, we can think of the propagation of an electromagnetic field through a vacuum as due
+to a kind of ``leap-frog'' effect, in which a changing electric field
+generates a magnetic field, which, in turn, generates an electric field,
+and so on. Note that the displacement current term in Eq.~(\ref{emv4}) plays
+a crucial role in the propagation of electromagnetic waves. 
+Indeed, without this term,
+a changing electric field is incapable of generating
+ a magnetic field, and so there can be no leap-frog effect. 
+Electromagnetic waves have many properties in common with other
+types of wave ({\em e.g.}, sound waves). However,  they are
+unique in one respect: {\em i.e.}, they are able to propagate through a vacuum. All other types of
+waves require some sort of medium through which to propagate. 
+
+Maxwell deduced that the speed of propagation of an electromagnetic
+wave through a vacuum is entirely 
+determined by the constants $\mu_0$ and $\epsilon_0$
+[see Eq. (\ref{e11.18})]. The former constant is related to the strength of the
+magnetic field generated by a steady current, whereas the latter constant
+is related to the strength of the electric field generated by a stationary
+charge. The values of both constants
+were well known in Maxwell's day. In modern units,
+$\mu_0 = 4\pi\times 10^{-7}\,{\rm N}\,{\rm s}^2 \,{\rm C}^{-2}$ and
+$\epsilon_0 = 8.854\times 10^{-12}\,{\rm C}^2\,{\rm N}^{-1} \,{\rm m}^{-2}$.
+Thus, when Maxwell calculated the velocity of electromagnetic waves he obtained
+\begin{equation}
+c = \frac{1}{\sqrt{(4\pi\times 10^{-7})\,(8.854\times 10^{-12})} }= 2.998
+\times 10^8 \,{\rm m}\,{\rm s}^{-1}.
+\end{equation}
+Now, Maxwell knew [from the work of Fizeau (1849) and Foucault (1850)] that
+the velocity of light was about $3\times 10^8\,{\rm m}\,{\rm s}^{-1}$. 
+The remarkable agreement between this experimentally determined velocity  and his 
+theoretical prediction for the velocity of electromagnetic waves immediately
+lead Maxwell to hypothesize that {\em light is a form of electromagnetic wave}.
+Of course, this hypothesis turned out to be correct. 
+We can still appreciate that Maxwell's achievement in identifying light as
+a form of electromagnetic wave   was
+quite
+remarkable. After all, his  equations were derived from 
+the results of bench-top
+laboratory experiments involving charges, batteries, coils, and currents,
+{\em etc.},  
+which apparently
+had nothing
+whatsoever to do with light. 
+
+Maxwell was able to make another remarkable prediction. The wavelength of
+light was well known in the late nineteenth century from studies of diffraction
+through slits, {\em etc}. 
+Visible light actually occupies a surprisingly
+narrow range of  wavelengths. The shortest wavelength blue light which is visible
+ has a wavelength of $\lambda= 0.40$ microns (one micron is $10^{-6}$ meters).
+The longest wavelength red light which is visible has a wavelength of
+$\lambda= 0.76$ microns. However, there is nothing in Maxwell's
+ analysis which suggested that
+this particular range of wavelengths is special.
+In principle,  electromagnetic waves
+can have any wavelength. 
+Maxwell concluded that visible light forms
+ a small element  of a vast spectrum of
+previously undiscovered
+types of electromagnetic radiation. 
+
+Since Maxwell's time, virtually all of the
+non-visible parts of the electromagnetic spectrum have been observed. 
+Table~\ref{t11.1}  gives a brief guide to the electromagnetic spectrum. 
+Electromagnetic waves are of particular importance because they 
+are our only source of information regarding the Universe around us. 
+Radio waves and microwaves (which are comparatively
+hard to scatter) have provided much of
+our knowledge about the centre of the Galaxy. This is completely unobservable
+in visible light, which is strongly scattered by interstellar gas and dust
+lying in the galactic plane. 
+For the same reason, the spiral arms of the Galaxy can only be mapped out using radio waves.
+Infrared radiation is useful for detecting 
+proto-stars which are not yet hot enough to emit visible radiation.
+Of course, visible radiation is still the mainstay of astronomy. 
+Satellite based ultraviolet observations have yielded invaluable insights into
+the structure and distribution of distant galaxies. Finally, X-ray and $\gamma$-ray
+astronomy usually concentrates on  exotic objects in the Galaxy such as pulsars
+and supernova remnants. 
+\begin{table}
+\centering
+\begin{tabular}{|l|c|}\hline
+Radiation Type& Wavelength Range ($m$)\\[0.5ex]\hline
+Gamma Rays & $<10^{-11}$ \\[0.5ex]
+X-Rays & $10^{-11}$--$10^{-9}$ \\[0.5ex]
+Ultraviolet & $10^{-9}$--$10^{-7}$\\[0.5ex]
+Visible & $10^{-7}$--$10^{-6}$\\[0.5ex]
+Infrared& $10^{-6}$--$10^{-4}$\\[0.5ex]
+Microwave & $10^{-4}$--$10^{-1}$\\[0.5ex]
+TV-FM & $10^{-1}$--$10^1$ \\[0.5ex]
+Radio& $>10^1$\\\hline
+\end{tabular}
+\caption{\em The electromagnetic spectrum.}\label{t11.1}
+\end{table}
+
+\subsection{Effect of Dielectric Materials}\label{s11.3}
+It turns out that electromagnetic waves cannot propagate very far through
+a conducting medium before they are either absorbed or reflected. However,
+electromagnetic waves are able to propagate through transparent dielectric media
+without difficultly. The speed of electromagnetic waves propagating through
+a dielectric medium is given by
+\begin{equation}
+c' = \frac{c}{\sqrt{K}},
+\end{equation}
+where $K$ is the dielectric constant of the medium in question, and
+$c$  the velocity of light in a vacuum. Since $K>1$ for dielectric
+materials, we conclude that:
+\begin{quote}
+{\sf The  velocity with which  electromagnetic
+waves propagate 
+through a dielectric medium is always less than the velocity
+with which they propagate through a  vacuum. }
+\end{quote}
+
+\subsection{Energy in Electromagnetic Waves}
+From Sect.~\ref{e10.3}, the energy stored per unit volume in an electromagnetic
+wave is given by
+\begin{equation}
+w = \frac{\epsilon_0\,E^2}{2} + \frac{B^2}{2\,\mu_0}.
+\end{equation}
+Since, $B=E/c$, for an electromagnetic wave, and $c= 1/\sqrt{\mu_0\,\epsilon_0}$,
+the above expression yields
+\begin{equation}
+w = \frac{\epsilon_0\,E^2}{2} + \frac{E^2}{2\,\mu_0\,c^2} =
+\frac{\epsilon_0\,E^2}{2} + \frac{\epsilon_0\,E^2}{2},
+\end{equation}
+or
+\begin{equation}
+w = \epsilon_0\,E^2.
+\end{equation}
+It is clear, from the above,  that half the energy in an
+electromagnetic wave is carried by the electric field, and the other half
+is carried by the magnetic field. 
+
+As an electromagnetic field propagates it transports energy. Let $P$ be the
+power per unit area carried by an electromagnetic wave:
+{\em i.e.}, $P$ is the energy transported per unit time
+across a unit cross-sectional area perpendicular to the
+direction in which the wave is traveling.  Consider a
+plane electromagnetic
+wave propagating along the $z$-axis. The wave propagates
+ a distance $c\,dt$
+along the $z$-axis in a time interval $d t$. If we
+consider a cross-sectional area $A$ at right-angles to the $z$-axis, then in
+a time $d t$ the wave sweeps  through a volume $d V$ of
+space, where $dV = A\,c\,d t$. The
+amount of energy filling this volume is
+\begin{equation}
+d W = w\,d V = \epsilon_0\,E^2\, A\,c\,d t.
+\end{equation}
+It follows, from the definition of $P$, that the power per unit area carried by
+the wave is given by
+\begin{equation}
+P = \frac{d W}{A\,d t} = \frac{ \epsilon_0\,E^2\, A\,c\,d t}{A\,dt},
+\end{equation}
+so that
+\begin{equation}
+P = \epsilon_0\,E^2\, c.
+\end{equation}
+Since half the energy in an electromagnetic wave is carried by the
+electric field, and the other half is carried by the magnetic field, it
+is conventional to convert the above expression into a form involving both
+the electric and magnetic field strengths. Since, $E=c\,B$, we have
+\begin{equation}
+P = \epsilon_0\,c\,E\,(c\,B) = \epsilon_0\,c^2\,E\,B = \frac{E\,B}{\mu_0}.
+\end{equation}
+Thus,
+\begin{equation}\label{e11.28}
+P = \frac{E\,B}{\mu_0}.
+\end{equation}
+
+Equation~(\ref{e11.28}) specifies the power per unit area transported by an electromagnetic
+wave at any given instant of time. The {\em peak} power  is given by
+\begin{equation}
+P_0 = \frac{E_0\,B_0}{\mu_0},
+\end{equation}
+where $E_0$ and $B_0$ are the peak amplitudes of the oscillatory
+electric and
+magnetic fields, respectively. It is easily demonstrated that
+the {\em average} power per unit area transported by an electromagnetic wave 
+is {\em half} the peak power, so that
+\begin{equation}\label{e11.30}
+S= \bar{P} = \frac{E_0\,B_0}{2\,\mu_0} = \frac{\epsilon_0\,c\,E_0^{~2}}{2}
+= \frac{c\,B_0^{~2}}{2\,\mu_0}.
+\end{equation}
+The quantity $S$ is conventionally termed the {\em intensity} of the wave. 
+
+\subsection{Worked Examples}
+\subsection*{\em Example 11.1: Electromagnetic waves}
+{\em Question:} Consider  electromagnetic waves of wavelength
+$\lambda = 30$\,cm in air. What is the frequency of such waves? If such waves pass
+from air into a block of quartz, for which $K=4.3$, what is their new
+speed, frequency, and wavelength?\\
+~\\
+{\em Answer:} Since, $f\,\lambda=c$, assuming that the dielectric constant of air is approximately unity, it follows that
+$$
+f = \frac{c}{\lambda} = \frac{(3\times 10^8)}{(0.3)} = 1\times 10^9\,{\rm Hz}.
+$$
+The new speed of the waves as they pass propagate through the
+quartz is
+$$
+c' = \frac{c}{\sqrt{K}} = \frac{(3\times 10^8)}{\sqrt{4.3}} = 1.4\times
+ 10^8\,{\rm m}\,{\rm s}^{-1}.
+$$
+The frequency of electromagnetic waves  does not change when the medium through
+which the waves are  propagating changes. Since $c'=f\,\lambda$ for
+electromagnetic waves propagating through a dielectric medium, we have
+$$
+\lambda_{\rm  quartz} = \frac{c'}{f} = \frac{(1.4\times 10^8)}
+{(1\times 10^9)} =  14\,{\rm cm}.
+$$
+
+\subsection*{\em Example 11.2: Intensity of electromagnetic radiation}
+{\em Question:} Suppose that the intensity of the sunlight falling on the
+ground on a particular day is $140\,{\rm W}\,{\rm m}^{-2}$. What are the
+peak values of the electric and magnetic fields associated with the
+incident radiation?\\
+~\\
+{\em Answer:} According to Eq.~(\ref{e11.30}), the peak electric field is given by
+$$
+E_0 = \sqrt{\frac{2\,S}{\epsilon_0\,c}} = \sqrt{\frac{(2)\,(140)}
+{(8.85\times 10^{-12})\,(3\times 10^8)}} = 324.7\,\,{\rm V}\,{\rm m}^{-1}.
+$$
+Likewise, the peak magnetic field is given by
+$$
+B_0 = \sqrt{\frac{2\,\mu_0\,S}{c}} = \sqrt{\frac{(2)\,(4\pi\times 10^{-7})\,(140)}
+{(3\times 10^8)}} = 1.083\times 10^{-6}\,{\rm T}.
+$$
+Note, of course, that $B_0=E_0/c$. 

@@ -1,0 +1,23 @@
+This repository contains Latex code to compile a
+set of lower-division undergraduate lecture notes
+on Electricity, Magnetism, and Optics.
+
+The code will only compile correctly if the following
+standard Tex packages are installed:
+
+epfs
+charter
+euler
+fancyhdr
+inputenc/utf8
+babel/polutonikogreek/english
+
+The document can be compiled by issuing the command
+
+latex 302
+
+in the lowest directory (containing the file 302.tex).
+
+The document must be compiled at least three times to
+get all of the cross-references and table of content
+data correct.

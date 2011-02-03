@@ -1,0 +1,1126 @@
+\section{Magnetic Induction}
+\subsection{Faraday's Law}
+The phenomenon of magnetic induction plays a crucial role in 
+three very useful electrical devices: the {\em electric generator}, the {\em electric
+motor}, and the {\em transformer}. Without these devices, modern life would be
+impossible in its present form. Magnetic induction was discovered in 1830 by the 
+English physicist Michael Faraday.  The American physicist Joseph Henry
+independently made the same discovery at about the same time. Both
+physicists were intrigued by the fact that an electric current flowing around 
+a circuit can generate a magnetic field. Surely, they reasoned, if an electric
+current can generate  a magnetic field then a magnetic field must somehow be able to
+generate an electric current.
+However, it took many years of fruitless experimentation
+before they were able to find the essential ingredient which allows
+a magnetic field to generate an electric current. This
+ ingredient is {\em time variation}.
+
+Consider a planar loop $C$ of conducting wire of cross-sectional area $A$.
+Let us place this loop in a magnetic field whose strength $B$ is approximately
+uniform over the extent of the loop. Suppose that the direction of the
+magnetic field subtends an angle $\theta$ with the normal direction to the
+loop. The {\em magnetic flux}\/ ${\mit\Phi}_B$ through the loop is
+defined as the product of the area of the loop and the component of
+the magnetic field perpendicular to the loop. Thus,
+\begin{equation}
+{\mit\Phi}_B = A\,B_\perp= A\, B\, \cos\theta.
+\end{equation}
+If the loop is wrapped around itself $N$ times ({\em i.e.}, if the loop
+has $N$ {\em turns}) then the magnetic flux through the loop is simply
+$N$ times the magnetic flux through a single turn:
+\begin{equation}
+{\mit\Phi}_B = N\,A\,B_\perp.
+\end{equation}
+Finally, if the magnetic field is not uniform over the loop, or the loop does not
+lie in one plane,
+ then we must evaluate the
+magnetic flux as a surface integral
+\begin{equation}
+{\mit\Phi}_B = \int_S {\bf B}\cdot d{\bf S}.
+\end{equation}
+Here, $S$ is some surface attached to $C$.
+If the loop has $N$ turns then the flux is $N$ times the above value. 
+The SI unit of magnetic flux is the weber (Wb). One tesla is equivalent to
+one weber per meter squared:
+\begin{equation}
+1\,{\rm T} \equiv 1\,{\rm Wb\, m}^{-2}.
+\end{equation}
+
+Faraday discovered  that if the magnetic field through a loop of wire
+{\em varies  in time} then an emf is induced around the loop. 
+Faraday was able to observe this effect because the emf gives rise to
+a current circulating in  the loop. Faraday found that the magnitude of
+the emf is directly proportional to the time rate of change of the magnetic field.
+He also discovered that an emf is generated when a loop of wire {\em moves}\/
+from a region of low magnetic field-strength to one of high magnetic field-strength, and {\em vice versa}. The emf is directly proportional to
+the velocity with which the loop  moves between the two regions. Finally,
+Faraday discovered that an emf is generated around a loop which  {\em rotates}\/
+in a uniform magnetic field of constant strength. In this case, the emf
+is directly proportional to the rate at which the loop rotates.
+Faraday was eventually
+able to propose a single
+law which could account for all of his many and varied observations. This law, which is known as
+{\em Faraday's law of magnetic induction}, is as follows:
+\begin{quote}
+{\sf The emf induced in a circuit is proportional to the time rate of change of the
+magnetic flux linking that circuit.}
+\end{quote} 
+SI units have been fixed so that the constant of proportionality in this
+law is {\em unity}. Thus, if the magnetic flux through a circuit changes
+by an amount $d{\mit\Phi}_B$ in a time interval $dt$
+then the emf ${\cal E}$ generated in the circuit is
+\begin{equation}
+{\cal E} = \frac{d{\mit\Phi}_B}{dt}.
+\end{equation}
+
+There are many different ways in which the magnetic flux linking an
+electric  circuit can
+change. Either the magnetic field-strength can change, or the direction of the magnetic
+field can change, or the position of the circuit can change, or the shape of the
+circuit can change, or the orientation of the circuit can change. 
+Faraday's law states that all of these ways are 
+completely {\em equivalent}\/ as far as the generation of an emf around the
+circuit is concerned. 
+
+\subsection{Lenz's Law}
+We still have not specified in which direction the emf generated 
+by a time-varying magnetic flux linking an electric circuit acts. In order to
+help specify this direction, we need to make use of a 
+ right-hand rule. Suppose
+that a current $I$  circulates around a planar loop of conducting wire, and,
+thereby, generates a magnetic field ${\bf B}$. What is the direction of
+this magnetic field as it passes through the middle of the loop? Well,
+if the fingers of a right-hand circulate in the same direction as the current,
+then the thumb indicates the direction of the
+magnetic field as it passes through the centre of the loop. This is illustrated in 
+Fig.~\ref{f9.1}.
+
+\begin{figure}
+\epsfysize=3in
+\centerline{\epsffile{Chapter09/fig9.01.eps}}
+\caption{\em Magnetic field generated by a planar current-carrying loop.}\label{f9.1}
+\end{figure}
+
+Consider a plane loop of conducting wire which is linked by magnetic
+flux. By convention, the direction in which current would have to
+flow around the loop in order to {\em increase}\/ the magnetic flux linking the loop
+is termed the {\em positive}\/ direction. Likewise, the direction  in which current would have to
+flow around the loop in order to {\em decrease}\/ the magnetic flux
+linking the loop
+is termed the {\em negative}\/ direction. Suppose that the magnetic flux linking the
+loop is increased.  In accordance with 
+Faraday's law, an emf is generated around the loop.
+ Does this emf act in the positive
+direction, so as to drive a current around the loop
+which further increases the magnetic flux, or does it act in the
+negative direction, so as to drive a current around the loop which
+decreases the magnetic flux? It is easily demonstrated experimentally that the
+emf acts in the negative direction. Thus:
+\begin{quote}
+{\sf The emf induced in an electric circuit always acts in such a direction that
+the current it drives around the circuit  opposes the change 
+in magnetic flux which produces the emf.}
+\end{quote}
+This result is known as {\em Lenz's law}, after the nineteenth century Russian
+scientist Heinrich Lenz, who first formulated it. Faraday's law, combined with
+Lenz's law,  is usually
+written
+\begin{equation}
+{\cal E} = -\frac{d{\mit\Phi}_B}{dt}.
+\end{equation}
+The minus sign is to remind us that the emf always acts to oppose the change
+in magnetic flux which generates the emf. 
+
+\subsection{Magnetic Induction}\label{s9.3}
+Consider a one-turn loop of conducting wire $C$ which is placed in a magnetic
+field ${\bf B}$. The magnetic flux ${\mit\Phi}_B$ linking  loop $C$ can be written
+\begin{equation}
+{\mit\Phi}_B = \int_S {\bf B}\cdot d{\bf S}
+\end{equation}
+where $S$ is any surface attached to the loop.
+
+Suppose that the magnetic field   changes in time,   causing the
+magnetic flux ${\mit\Phi}_B$ linking circuit $C$ to vary.
+Let the flux change by an amount $d{\mit\Phi}_B$ in the time interval $dt$. According to Faraday's law, the emf
+${\cal E}$
+induced around loop $C$ is given by
+\begin{equation}\label{ex}
+{\cal E} = - \frac{d{\mit\Phi}_B}{dt}.
+\end{equation}
+If ${\cal E}$ is
+{\em positive}\/ then the emf acts around the loop in the {\em same}\/ sense as that
+indicated
+by the fingers of a right-hand, when the thumb points
+in the  direction of the mean  magnetic field passing through the loop. Likewise,
+if ${\cal E}$ is
+{\em negative}\/  then the emf acts around the loop in the 
+{\em opposite}\/ sense to that
+indicated
+by the fingers of a right-hand, when the thumb  points
+in the  direction of the mean magnetic field passing through the loop. In the
+former case, we say that the emf acts in the {\em positive}\/ direction, whereas
+in the latter case we say it acts in the {\em negative}\/ direction.
+
+Suppose that ${\cal E}>0$, so that the emf acts in the positive direction.
+How, exactly, is this emf produced? In order to answer this question,
+we need to remind ourselves what an emf actually is. When we say that
+an emf ${\cal E}$ acts around the loop $C$ in the positive direction,
+what we really mean is that a charge $q$ which circulates once around
+the loop in the positive direction acquires the energy $q\,{\cal E}$.
+How does the charge acquire this energy? Clearly, either an electric
+field or a magnetic field, or some combination of the two, must perform the
+work $q\,{\cal E}$ on the charge as it circulates around the loop.
+However, we have already seen, from Sect.~\ref{s8.4}, that a magnetic
+field is unable to do work on a charged particle. Thus, the charge must
+acquire the energy $q\,{\cal E}$ from an {\em electric}\/ field as it
+circulates once around the loop in the positive direction.
+
+According to Sect.~\ref{spotn}, the work that the electric field does on the charge as it goes around
+the loop is
+\begin{equation}
+W=q\,\oint_C {\bf E}\cdot d{\bf r},
+\end{equation}
+where $d{\bf r}$ is a line element of the loop. Hence, by energy conservation,
+we can write $W = q\,{\cal E}$, or
+\begin{equation}\label{ey}
+{\cal E} = \oint_C {\bf E} \cdot d{\bf r}.
+\end{equation}
+ The term
+on the right-hand side of the above expression can be recognized as
+the {\em line integral}\/ of the electric field around loop $C$ in the
+positive direction. Thus, the emf generated around the
+circuit $C$ in the positive direction is equal to the line integral
+of the electric field around the circuit in the same direction. 
+
+Equations~(\ref{ex}) and (\ref{ey}) can be combined to give
+\begin{equation}\label{e9.13}
+ \oint_C {\bf E} \cdot d{\bf r}= -\frac{d{\mit\Phi}_B}{dt}.
+\end{equation}
+Thus, Faraday's law implies that the line integral of the electric field around circuit $C$
+(in the positive direction) is equal to minus the time rate of change of the
+magnetic flux linking this circuit. Does this law just apply to conducting
+circuits, or can we apply it to an arbitrary closed loop in space? Well,
+the difference between a conducting circuit and an arbitrary closed loop
+is that electric current can flow around a circuit, whereas current
+cannot, in general, flow around an arbitrary loop. In fact, the emf
+${\cal E}$ induced around a conducting circuit drives a current $I={\cal E}/R$
+around that circuit, where $R$ is the resistance of the circuit. However,
+we can make this resistance arbitrarily large without invalidating Eq.~(\ref{e9.13}). 
+In the limit in which $R$ tends to infinity, no current flows around the circuit,
+so the circuit becomes indistinguishable from an arbitrary loop. Since we can place
+such a circuit anywhere in space, and Eq.~(\ref{e9.13}) still holds, we are forced to the 
+conclusion that Eq.~(\ref{e9.13}) is valid for {\em any} closed loop in space, and not just
+for conducting circuits. 
+
+Equation~(\ref{e9.13}) describes how a time-varying magnetic field {\em generates}\/
+an electric field which fills space. The strength of the electric field is directly
+proportional to the rate of change of the magnetic field. The 
+field-lines associated with this electric
+field  form loops in the plane perpendicular to the magnetic field. If the
+magnetic field is increasing then the electric field-lines circulate in the
+opposite sense to the fingers of a right-hand, when the thumb points 
+in the direction of the field. If the
+magnetic field is decreasing then the electric field-lines circulate in the
+same sense as the fingers of a right-hand, when the thumb points 
+in the direction of the field. This is illustrated in Fig.~\ref{f9.2}.
+
+\begin{figure}
+\epsfysize=3in
+\centerline{\epsffile{Chapter09/fig9.02.eps}}
+\caption{\em Inductively generated electric fields}.\label{f9.2}
+\end{figure}
+
+We can now appreciate that when a conducting circuit is placed in a
+time-varying magnetic field, it is the electric field induced by the changing
+magnetic field which gives rise to the emf around the circuit. If the loop has a
+finite resistance then this electric field also drives a current around the circuit.
+Note, however, that the electric field is generated irrespective of the
+presence of a conducting circuit. The electric field generated by a time-varying
+magnetic field is quite different in nature to that generated by a set 
+of stationary
+electric charges. In the latter case, the electric field-lines begin on
+positive charges, end on negative charges, and {\em  never}\/ form closed loops
+in free space. In the former case, the electric field-lines {\em never}\/ begin or
+end, and {\em  always}\/ form closed loops in free space. In fact, the electric
+field-lines generated by magnetic induction behave in much the same
+manner as magnetic field-lines. Recall, from Sect.~\ref{s3.1}, that  an electric
+field generated by fixed charges is unable to do net work on a charge
+which circulates in a closed loop. On the other hand, an electric
+field generated by magnetic induction certainly can do work on a charge
+which circulates in a closed loop. This is basically how a current is induced in
+a conducting loop placed in a time-varying magnetic field. One consequence of this
+fact 
+is that the work done in slowly moving a charge
+between two points in an inductive electric field {\em does}\/ depend on the
+path taken between the two points. It follows that we cannot
+calculate  a {\em unique}\/ potential difference between two points in an inductive
+electric field. In fact, the whole idea of electric potential breaks down
+in a such a field (fortunately, there is a way of
+salvaging the idea of electric potential in an inductive  field, but this topic
+lies beyond the scope of this course). Note, however, that it is still
+possible to calculate a {\em unique} value for the emf generated around a conducting
+circuit by an inductive electric field, because, in this case, the path taken by
+electric charges is uniquely specified: {\em i.e.}, the charges have 
+to follow the 
+circuit.
+
+\subsection{Motional Emf}\label{s9.4}
+We now understand how an emf is generated around a {\em fixed}\/ circuit placed in
+a time-varying magnetic field. But, according to Faraday's law, an
+emf is also generated around a {\em moving} circuit placed in a  magnetic
+field which does not vary in time. 
+According to
+Eq.~(\ref{e9.13}), no space-filling inductive
+electric field is generated in the latter case,
+since   the magnetic field is steady. So, how do we account for the emf in the latter
+ case?
+
+In order to help answer this question, let us consider a simple
+circuit in which a conducting rod of length $l$ slides along a
+U-shaped conducting frame in the presence of a uniform magnetic field.
+This circuit is illustrated in Fig.~\ref{f9.3}. Suppose, for the sake of simplicity, that the
+magnetic field is directed perpendicular to the plane of the circuit. To be
+more exact, the magnetic field is directed into the page in the figure.
+Suppose, further, that we move the rod to the right with the constant velocity
+$v$. 
+
+\begin{figure}
+\epsfysize=3in
+\centerline{\epsffile{Chapter09/fig9.03.eps}}
+\caption{\em Motional emf.}\label{f9.3}
+\end{figure}
+
+The magnetic flux linked by the circuit is simply the product of
+the perpendicular magnetic field-strength, $B$, and the area of the circuit,
+$l\,x$, where $x$ determines the position of the sliding rod.
+Thus,
+\begin{equation}
+{\mit\Phi}_B = B\,l\,x.
+\end{equation}
+Now, the rod moves a distance $dx=v\,dt$ in a
+time interval $dt$, so in the same time interval the magnetic
+flux linking the circuit {\em increases}\/ by
+\begin{equation}
+d{\mit\Phi}_B = B\,l\,dx = B\,l\,v\,dt.
+\end{equation}
+It follows, from Faraday's law, that the magnitude of the emf ${\cal E}$
+generated around the circuit is given by
+\begin{equation}\label{e9.15}
+{\cal E} = \frac{d{\mit\Phi}_B}{d t} = B\,l\,v.
+\end{equation}
+Thus, the emf generated in the circuit by the moving rod is simply the product of
+the magnetic field-strength, the length of the rod, and the velocity of
+the rod. 
+If the magnetic field is not perpendicular to the circuit,
+but instead subtends an angle $\theta$ with respect to the normal direction
+to the plane of the circuit, then it is easily demonstrated that the 
+{\em motional emf}\/ generated in the circuit by the moving rod is
+\begin{equation}
+{\cal E} = B_\perp\,l\,v,
+\end{equation}
+where $B_\perp = B\,\cos\theta$ is the component of the magnetic field 
+which is perpendicular to  the plane of the circuit. 
+
+Since the magnetic flux linking the circuit  {\em increases}\/ in time, the
+emf acts in the {\em negative}\/ direction ({\em i.e.}, in the opposite sense to the
+fingers of a right-hand, if the thumb  points along the
+direction of the magnetic field). The emf, ${\cal E}$, therefore, acts in the
+{\em anti-clockwise}\/ direction in the figure. If $R$
+is the total  resistance of the circuit,
+then this emf drives an anti-clockwise electric current of magnitude
+$I={\cal E}/R$ around the circuit.
+
+But, where does the emf come from? Let us again remind ourselves what an
+emf is. When we say that an emf ${\cal E}$ acts around the circuit
+in the anti-clockwise direction, what we really mean is that a charge $q$
+which circulates once around the circuit in the anti-clockwise direction
+acquires the energy $q\,{\cal E}$. The only way in which the charge
+can acquire this energy is if something does {\em work}\/
+ on it as it circulates.
+Let us assume that the charge circulates very {\em slowly}. The magnetic
+field exerts a negligibly small force on the charge when it is traversing the
+non-moving part of the circuit (since the charge is moving very slowly). 
+However, when the charge is traversing the moving rod
+it experiences  an {\em upward}\/ (in the figure) magnetic force of magnitude $f=q\,v\,B$ 
+ (assuming that
+$q>0$). The net work done on the charge by this force as
+it traverses the rod is 
+\begin{equation}
+W' = q\,v\,B\,l = q\,{\cal E},
+\end{equation}
+since ${\cal E} = B\,l\,v$. Thus, it would appear that the motional emf
+generated around the circuit can be accounted for in terms of the
+magnetic  force exerted
+on charges traversing  the moving rod. 
+
+But, if we think carefully, we can see that there is something
+seriously wrong with the above explanation. 
+We seem to be saying that the charge acquires the energy $q\,{\cal E}$
+from the {\em magnetic field}\/ as it moves around the circuit once in the
+anti-clockwise direction. But, this is impossible, because a magnetic field 
+{\em cannot}\/ do  work on an electric charge. 
+
+
+Let us look at the problem from the point of view of a charge
+$q$ traversing the moving rod. In the frame of reference of the rod,
+the charge only moves very slowly, so the magnetic force on it is negligible. In fact, only an electric field can exert a significant
+force on a slowly moving charge. In order to account for the motional emf generated
+around the circuit, we need the charge to experience an upward force of
+magnitude $q\,v\,B$. The only way in which this is possible is if the charge
+sees an upward pointing {\em electric field}\/ of magnitude
+\begin{equation}
+E_0 = v\,B.
+\end{equation}
+In other words, although there is no electric field in the laboratory frame,
+there is an electric field in the frame of reference of the moving rod,
+and it is this field which does the necessary  amount of work on charges
+moving around the circuit to account for the existence
+of the motional emf, ${\cal E}=B\,l\,v.$
+
+More generally, if a conductor moves in the laboratory frame
+with velocity ${\bf v}$ in the presence of a magnetic field ${\bf B}$ then
+a charge $q$ inside  the conductor experiences a magnetic force ${\bf f} = q\,
+{\bf v}\times{\bf B}$. In the frame of the conductor, in which the charge is
+essentially stationary, the same force takes the form of an electric
+force ${\bf f} = q\,{\bf E}_0$, where ${\bf E}_0$ is the electric field in
+the frame of reference of the conductor. Thus,
+if a conductor moves with velocity ${\bf v}$ through a magnetic field ${\bf B}$
+then the electric field ${\bf E}_0$ which appears in the rest frame of the conductor
+is given by
+\begin{equation}
+{\bf E}_0 = {\bf v} \times {\bf B}.
+\end{equation}
+This electric field is the ultimate origin of the motional emfs which are
+ generated whenever
+circuits move with respect to magnetic fields. 
+
+We can now appreciate that Faraday's law is due to a combination of
+two apparently distinct effects. The first is the space-filling 
+electric field 
+generated by a changing magnetic field. The second  is the electric
+field generated inside a conductor when it moves through a magnetic field.
+In reality, these effects are two aspects of the same basic phenomenon, which
+explains why no real distinction is made between them in Faraday's law.
+
+\subsection{Eddy Currents}
+We have seen, in the above example, that when a conductor is moved in a magnetic
+field a motional emf is generated.  Moreover, according to Worked Example 9.3, this emf drives a current 
+which heats the conductor, and, when combined with the magnetic
+field,  also
+gives rise to a magnetic force acting on the conductor which opposes
+its motion. It turns out that these results are quite general. 
+Incidentally, the induced  currents which circulate inside a moving conductor in  a static magnetic
+field, or a stationary conductor in a time-varying magnetic field, are usually called
+{\em eddy currents}. 
+
+Consider a  metal disk which rotates in a perpendicular magnetic field which only
+extends over a small rectangular portion of the disk, as shown in Fig.~\ref{f9.4}. Such a field could be produced by the pole of a horseshoe magnetic. 
+The motional emf induced in the disk, as it moves through the field-containing
+region, acts in the direction ${\bf v}\times{\bf B}$, where ${\bf v}$ is
+the velocity of the disk, and ${\bf B}$ the magnetic field. It follows
+from Fig.~\ref{f9.4} that the emf acts downward. The emf drives  currents which are
+also directed downward. However, these currents must form closed loops, and,
+hence, they are directed upward in those regions of the disk immediately adjacent
+to the field-containing region, as shown in the figure. It can be seen that
+the induced currents flow in little eddies. Hence, the name ``eddy currents.''
+According to the right-hand rule, the downward currents in the field-containing
+region give rise to a magnetic force on the disk which acts to the right. 
+In other words, the magnetic force acts to prevent the rotation of the disk. 
+Clearly, external  work must be done on the disk in order to keep it 
+rotating at a constant angular velocity. This external work is ultimately
+dissipated as heat 
+ by the eddy currents circulating inside  the disk. 
+
+\begin{figure}
+\epsfysize=3in
+\centerline{\epsffile{Chapter09/fig9.04.eps}}
+\caption{\em Eddy currents}.\label{f9.4}
+\end{figure}
+
+Eddy currents can be  very useful. For instance, some cookers work by  using
+eddy currents. The cooking pots, which are usually made out of aluminium, are placed
+on plates which generate oscillating magnetic fields. These fields induce
+eddy currents in the pots which heat them up. The heat is then transmitted
+to the food inside the pots. This type of cooker is particularly useful for
+food which needs to be  cooked gradually over a long period of time: {\em i.e.},
+over many hours, or even days. Eddy currents can also be used to heat small 
+pieces of metal until they become  white-hot by  placing them  in a very
+rapidly oscillating magnetic field. This technique is sometimes used in brazing. 
+Heating conductors by means of eddy currents is called {\em inductive heating}.
+Eddy currents can also be used to damp motion. This technique, which
+is called {\em eddy current damping},  is often
+employed in galvanometers.
+
+\subsection{The Alternating Current Generator}\label{s9.6}
+An electric generator, or dynamo,  is a device which converts mechanical energy into
+electrical energy. The simplest practical generator consists of a rectangular
+coil rotating in a uniform magnetic field. The magnetic field is usually supplied
+by a permanent magnet. This setup is illustrated in Fig.~\ref{f9.5}.
+
+\begin{figure}
+\epsfysize=3in
+\centerline{\epsffile{Chapter09/fig9.05.eps}}
+\caption{\em An alternating current generator.}\label{f9.5}
+\end{figure}
+
+Let $l$ be the length of the coil along its axis of rotation, and $w$ the
+width of the coil perpendicular to this axis. Suppose that the
+coil rotates with  constant angular velocity $\omega$ in a uniform
+magnetic field of strength $B$. The velocity $v$ with which the the two
+long sides of the coil ({\em i.e.},  
+sides $ab$ and $cd$) move through the magnetic field is simply the product
+of the angular velocity of rotation $\omega$ and the distance $w/2$ of each
+side from the axis of rotation, so $v = \omega\,w/2$. The motional emf
+induced in each side is given by ${\cal E} = B_\perp\,l\,v$, where $B_\perp$ is
+the component of the magnetic field perpendicular to instantaneous direction 
+of motion of the side in question.
+If the direction of the magnetic field subtends an
+angle $\theta$ with the normal direction to
+the coil, as shown in the figure, then $B_\perp = B\,\sin\theta$. 
+Thus, the magnitude of the motional emf generated in sides $ab$ and $cd$
+is 
+\begin{equation}
+{\cal E}_{ab} = \frac{B\, w\, l\, \omega\,\sin\theta}{2} = \frac{B\,A\,
+\omega\,\sin\theta}{2},
+\end{equation}
+where $A=w\,l$ is the area of the coil. 
+The emf is zero when $\theta = 0^\circ$ or $180^\circ$, since the
+direction of motion of sides $ab$ and $cd$ is {\em parallel}\/ to the direction
+of the magnetic field in these cases. The emf attains its maximum value when
+$\theta = 90^\circ$ or $270^\circ$, since the direction of motion of
+sides $ab$ and $cd$ is {\em perpendicular} to the direction of the magnetic field
+in these cases. Incidentally, it is clear, from symmetry, that no net motional
+emf is generated in sides $bc$ and $da$ of the coil. 
+
+Suppose that the direction of rotation of the coil is such that side
+$ab$ is moving into the page in Fig.~\ref{f9.5} (side view), whereas side
+$cd$ is moving out of the page. The motional emf induced in side $ab$ acts from 
+$a$ to $b$. Likewise, the motional
+emf induce in side $cd$ acts from $c$ to $d$. It can be seen that both emfs
+act in the clockwise direction around the coil. Thus, the net emf 
+${\cal E}$ acting around the
+coil is $2\,{\cal E}_{ab}$. If the coil has $N$ turns then the net emf becomes
+$2\,N\,{\cal E}_{ab}$. Thus, the general expression for the emf generated around a
+steadily rotating, multi-turn coil in a uniform magnetic field is
+\begin{equation}\label{e9.22}
+{\cal E} = N\,B\,A\,\omega\,\sin( \omega\, t),
+\end{equation}
+where we have written $\theta = \omega \,t$ for a steadily rotating coil (assuming that
+$\theta=0$ at $t=0$). This expression can also be written
+\begin{equation}\label{e9.23}
+{\cal E} = {\cal E}_{\rm max}\,\sin (2\pi\, f\, t),
+\end{equation}
+where 
+\begin{equation}\label{e9.24}
+{\cal E}_{\rm max}= 2\pi\,N\,B\,A\,f
+\end{equation}
+ is the peak emf produced by the generator, and
+$f=\omega/2\pi$ is the number of complete rotations the coils executes per second. Thus, the
+peak emf is directly proportional to the area of the coil, the number of turns
+in the coil, the rotation frequency of the coil,
+and the magnetic field-strength.
+
+Figure~\ref{f9.6} shows the emf specified in Eq.~(\ref{e9.23}) plotted as a function
+of time. It can be seen that the variation of the emf with time is
+{\em sinusoidal}\/ in nature. The emf attains its peak values when the plane of
+the coil is parallel to the plane of the magnetic field,  passes through
+zero when the plane of the coil is perpendicular to the magnetic field, and reverses
+sign every half period of revolution of the coil. The emf is periodic
+({\em i.e.}, it continually repeats the same pattern in time), with
+period $T= 1/f$ (which is, of course, the rotation period of the coil). 
+
+\begin{figure}
+\epsfysize=2.5in
+\centerline{\epsffile{Chapter09/fig9.06.eps}}
+\caption{\em Emf generated by a steadily rotating AC generator.}\label{f9.6}
+\end{figure}
+
+Suppose that some load ({\em e.g.}, a light-bulb, or an electric heating
+element) of resistance $R$ is connected across the terminals of the
+generator. In practice, this is achieved by connecting the two ends of the
+ coil to rotating rings which are then connected to the external circuit by means
+of metal brushes. According to Ohm's law, the current $I$ which flows in the
+load is given by
+\begin{equation}\label{e9.25}
+I = \frac{\cal E}{R} = \frac{ {\cal E}_{\rm max}}{R}\, \sin (2\pi\, f\, t).
+\end{equation}
+Note that this current is constantly changing direction, just like the
+emf of the generator. Hence, the type of generator described above is
+usually termed an {\em alternating current}, or $AC$, generator. 
+
+The current $I$ which flows through the load must also flow around the coil.
+Since the coil is situated in a magnetic field, this current gives rise to
+a torque on the coil which, as is easily demonstrated, acts to slow down its
+rotation. According to  Sect.~\ref{s8.11}, the braking torque $\tau$ acting
+on the coil is given by
+\begin{equation}
+\tau = N\,I\,B_\parallel\,A,
+\end{equation}
+where $B_\parallel=B\,\sin\theta$ is the component of the magnetic field which
+lies in the plane of the coil. It follows from Eq.~(\ref{e9.22}) that 
+\begin{equation}\label{e9.27}
+\tau = \frac{{\cal E}\, I}{\omega},
+\end{equation}
+since ${\cal E} = N\,B_\parallel\,A\,\omega$. 
+An external
+torque which is equal and opposite to the breaking torque must be applied to
+the coil if it is to rotate {\em uniformly}, as assumed
+above. The rate $P$ at which this external torque does work is equal to the
+product of the torque $\tau$ and the angular velocity $\omega$ of the coil. Thus,
+\begin{equation}
+P= \tau\,\omega = {\cal E}\, I.
+\end{equation}
+Not surprisingly, the rate at which the external torque performs works exactly matches the
+rate ${\cal E}\,I$ at which electrical energy is generated in the circuit comprising the rotating coil and the load.
+
+Equations~(\ref{e9.22}), (\ref{e9.25}), and (\ref{e9.27}) yield
+\begin{equation}\label{e9.29}
+\tau = \tau_{\rm max}\,\sin^2(2\pi \,f\,t),
+\end{equation}
+where $\tau_{\rm max} = ({\cal E}_{\rm max})^2/(2\pi\,f\,R)$. Figure~\ref{f9.7} shows the breaking 
+torque $\tau$ plotted as a function of time $t$, according to
+Eq.~(\ref{e9.29}). It can be seen that the
+torque is always of the same sign ({\em i.e.}, it always acts in the same
+direction, so as to continually oppose the
+rotation of the coil), but  is not constant
+in time. Instead, it   {\em pulsates}\/  periodically with period $T$. The breaking
+torque attains its maximum value whenever the plane of the coil is parallel to the
+plane of the magnetic field, and is zero whenever the plane of the coil is perpendicular
+to the magnetic field. It is clear that the external torque needed
+to keep the coil rotating at a constant angular velocity must also pulsate
+in time with period $T$. A constant external torque would give rise to  a non-uniformly rotating
+coil, and, hence, to an alternating emf which varies with  time in a more
+complicated manner than $\sin(2\pi\, f\, t)$.
+
+\begin{figure}
+\epsfysize=2.5in
+\centerline{\epsffile{Chapter09/fig9.07.eps}}
+\caption{\em The braking torque in a steadily rotating AC generator.}\label{f9.7}
+\end{figure}
+
+Virtually all commercial power stations generate electricity using AC generators. 
+The external power needed to turn the generating coil is usually supplied by
+a steam turbine (steam blasting against fan-like blades which are
+forced into rotation). Water is vaporized to produce
+high pressure 
+steam  by burning coal, or by using the energy released  inside a nuclear 
+reactor. 
+Of course, in hydroelectric power stations, the power needed  
+to turn the generator coil is supplied by a water turbine (which is similar
+to a steam turbine, except that falling water plays the role of the steam). 
+Recently, a new type of power station has been developed in which the
+power needed to rotate the generating coil is supplied by a gas turbine
+(basically, a large jet engine which burns natural gas). In the United States
+and Canada, the alternating emf generated by power stations oscillates at
+$f=60$\,Hz, which means that the
+generator coils in power stations rotate exactly
+sixty times a second. In Europe, and much of the rest of the world, the oscillation frequency
+of commercially generated electricity is $f=50$\,Hz. 
+
+\subsection{The Direct Current Generator}
+Most common electrical appliances ({\em e.g.}, electric light-bulbs, and electric
+heating elements) work fine on AC electrical power. However, there are some
+situations in which DC  power is preferable. For instance, small electric
+motors ({\em e.g.}, those which power food mixers and vacuum cleaners) work very well on AC
+electricity, but very large electric motors ({\em e.g.}, those
+which power subway trains) generally work much better on DC electricity. Let us
+investigate how DC electricity can be generated. 
+
+\begin{figure}
+\epsfysize=2.5in
+\centerline{\epsffile{Chapter09/fig9.08.eps}}
+\caption{\em A split-ring commutator.}\label{f9.8}
+\end{figure}
+
+A simple DC generator consists of the same basic elements as a simple
+AC generator: {\em i.e.}, a multi-turn coil rotating uniformly in a magnetic
+field. The main difference between a DC generator and an AC generator lies
+in the manner in which the rotating coil is connected to the external circuit 
+containing the load. In an AC generator, both ends of the coil are connected
+to separate slip-rings which co-rotate with the coil, and are connected to
+the external circuit via wire brushes. In this manner, the emf ${\cal E}_{\rm ext}$
+seen by the external circuit is always the same as the emf ${\cal E}$ 
+ generated around the rotating
+coil. In a DC generator, the two ends of the coil are attached to different halves
+of a single split-ring which co-rotates with the coil. The split-ring is connected
+ to
+the external circuit by means of metal brushes---see Fig.~\ref{f9.8}. 
+This combination of a rotating split-ring and stationary metal brushes 
+is called a {\em commutator}. The purpose of the commutator is to ensure that
+the emf ${\cal E}_{\rm ext}$
+seen by the external circuit 
+is equal to the emf  ${\cal E}$ 
+ generated around the rotating
+coil for {\em half}\/ the rotation period, but is equal to minus this emf for the
+other half (since the connection between the external circuit and the rotating
+coil is reversed by the commutator every half-period of rotation). The
+positions of the metal brushes can be adjusted such that the connection between
+the rotating coil and the external circuit reverses whenever the emf
+${\cal E}$ generated around the coil goes through zero. In this special case,
+the emf seen in the external circuit is simply
+\begin{equation}
+{\cal E}_{\rm ext} = |{\cal E}| = {\cal E}_{\rm max}\,|\sin (2\pi\, f\, t)|.
+\end{equation}
+Figure~\ref{f9.9} shows ${\cal E}_{\rm ext}$ plotted as a function of
+time, according to the above formula.  The variation of the emf with time is
+very similar to that of an AC generator, except that whenever the AC generator
+would produce a negative emf the commutator in the DC generator reverses
+the polarity of the coil with respect to the external circuit, so that the negative
+half of the AC signal is reversed and made positive. The result is a bumpy
+direct emf which rises and falls but never changes direction. This type of
+pulsating emf can be smoothed out by using more than one coil rotating about the
+same axis, or by other electrical techniques, to give a good imitation of the
+direct current delivered by a battery. The {\em alternator}\/ in a car
+({\em i.e.}, the DC generator which recharges the battery) is a common example
+of a DC generator
+of the type discussed above. Of course, in an alternator, the external torque needed to rotate
+the coil is provided by the engine of the car.
+
+\begin{figure}
+\epsfysize=2.5in
+\centerline{\epsffile{Chapter09/fig9.09.eps}}
+\caption{\em Emf generated in a steadily rotating  DC
+generator.}\label{f9.9}
+\end{figure}
+
+\subsection{The Alternating Current Motor}
+The first electric dynamo was constructed in 1831 by Michael Faraday. 
+An electric  dynamo is, of course, a device which transforms mechanical energy into
+electrical energy. An electric motor, on the other hand, is a device which
+transforms electrical energy into mechanical energy. In other words, an electric
+motor is an electric dynamo run in {\em reverse}. It took a surprisingly long time for
+scientists in the nineteenth century to realize this. In fact, the message only
+really sank home after a fortuitous accident during  the 1873 Vienna World Exposition. 
+A large hall was filled with modern gadgets. One of these gadgets,
+a steam engine driven
+dynamo, was producing electric power when a workman unwittingly connected the
+output leads from another dynamo to the energized circuit. Almost immediately,
+the latter dynamo started to whirl around at great speed. The dynamo was, 
+in effect, transformed into an electric motor. 
+
+An AC electric motor consists of the same basic elements as an
+AC electric generator: {\em i.e.}, a multi-turn coil which is free
+to rotate in a constant magnetic field. 
+Furthermore, the rotating coil is connected to the
+external circuit in just the same manner as in an AC generator: {\em i.e.}, via two
+slip-rings attached to metal brushes. Suppose that an external voltage
+source of emf $V$ is connected across the motor. It is assumed that $V$
+is an {\em alternating}\/ emf, so that
+\begin{equation}
+V = V_{\rm max} \,\sin (2\pi\, f\, t),
+\end{equation}
+where $V_{\rm max}$ is the peak voltage, and $f$ is the alternation frequency. 
+Such an emf could be obtained from an AC generator, or, more simply, from
+the domestic mains supply. For the case of the mains, $V_{\rm max} = 110$\,V
+and $f=60$\,Hz in the U.S.\ and Canada, whereas $V_{\rm max} = 220$\,V and
+$f=50$\,Hz in Europe and Asia. The external emf drives an alternating current
+\begin{equation}
+I = I_{\rm max} \, \sin (2\pi\, f\, t)
+\end{equation}
+around the external circuit, and through the motor. As this current flows around the
+coil, the magnetic field exerts a torque on the coil, which causes it
+to rotate. The motor eventually  attains a steady-state in which
+the rotation frequency of the coil matches the alternation frequency of the
+external emf. In other words, the steady-state rotation frequency of the coil is
+$f$. Now a coil rotating in a magnetic field generates an emf ${\cal E}$. 
+It is easily demonstrated that this emf acts to {\em oppose}\/ the circulation of the
+current around the coil: {\em i.e.}, the induced emf acts in the opposite
+direction to the external emf. For an $N$-turn  coil of cross-sectional area $A,$
+rotating with frequency $f$ in a magnetic field $B$, the back-emf ${\cal E}$
+is given by
+\begin{equation}
+{\cal E} = {\cal E}_{\rm max}\,\sin (2\pi\, f\, t),
+\end{equation}
+where
+\begin{equation}\label{e9.32}
+{\cal E}_{\rm max} = 2\pi\,N\,B\,A\,f,
+\end{equation}
+ and use has been made of the results
+of Sect.~\ref{s9.6}. 
+
+\begin{figure}
+\epsfysize=3in
+\centerline{\epsffile{Chapter09/fig9.10.eps}}
+\caption{\em Circuit diagram for an AC motor connected to an external
+AC emf source.}\label{f9.10}
+\end{figure}
+
+Figure~\ref{f9.10} shows the circuit in question. A circle with a
+wavy line inside is the conventional way of indicating an AC voltage source. 
+The motor is modeled as a resistor $R$, which represents the internal
+resistance of the motor, in series with the back-emf ${\cal E}$. Of course,
+the back-emf acts in the opposite direction to the external emf $V$. 
+Application of Ohm's law around the circuit gives
+\begin{equation}
+V = I\, R + {\cal E},
+\end{equation}
+or
+\begin{equation}
+V_{\rm max}\, \sin (2\pi\, f \,t) = I_{\rm max} \,R\,\sin (2\pi\, f\, t) + {\cal E}_{\rm max}\,
+\sin (2\pi\, f\, t),
+\end{equation}
+which reduces to
+\begin{equation}
+V_{\rm max} = I_{\rm  max} \,R + {\cal E}_{\rm max}.
+\end{equation}
+
+The rate $P$ at which the motor {\em gains}\/ electrical energy from the external
+circuit is given by
+\begin{equation}\label{e9.37}
+P = {\cal E}\,I = P_{\rm max}\, \sin^2(2\pi\, f\, t),
+\end{equation}
+where
+\begin{equation}
+P_{\rm max} = {\cal E}_{\rm max}\, I_{\rm max} = \frac{ {\cal E}_{\rm  max}\,
+(V_{\rm max} - {\cal E}_{\rm max})}{R}.
+\end{equation}
+By conservation of energy, $P$ is also the rate at which the motor performs
+mechanical work. Note that the rate at which the motor does mechanical
+work is not constant in time, but, instead, pulsates at the rotation frequency
+of the coil. It is possible to construct a motor which performs work
+at a more uniform rate by employing more than one coil rotating about the
+same axis. 
+
+As long as $V_{\rm max} > {\cal E}_{\rm max}$, the rate at which the
+motor performs mechanical work is positive ({\em i.e.}, the motor 
+does useful work). However, if $V_{\rm max} < {\cal E}_{\rm max}$
+then the rate at which the motor performs work becomes negative. This means that
+we must do mechanical work on the motor in order to keep it rotating, which
+is another way of saying that the motor does not do useful work.
+Clearly, in order for an AC motor to do useful work, the external emf $V$ must
+be able to overcome the back-emf ${\cal E}$ induced in the motor ({\em i.e.},
+$V_{\rm max} > {\cal E}_{\rm max}$).
+
+
+\subsection{The Direct Current Motor}
+In steady-state, an AC motor always
+rotates at the alternation frequency of its power supply. 
+Thus, an AC motor powered by the domestic  mains supply  rotates at 60\,Hz in the
+U.S.\, and Canada, and at 50\,Hz in Europe and Asia. Suppose, however, that
+we require a {\em variable speed}\/ electric motor. We could always use
+an AC motor driven  by a variable frequency AC power supply, but such  power
+supplies are very expensive. A far cheaper
+alternative is to use a DC motor driven  by a DC power supply. Let us
+investigate DC motors.
+
+A DC motor consists of the same basic elements as a DC electric generator:
+{\em i.e.}, a multi-turn coil which is free to rotate in a constant magnetic
+field. Furthermore, the rotating coil is connected to the external circuit
+in just the same manner as in a DC generator: {\em i.e.}, via a split-ring
+commutator which reverses the polarity of the coil with respect to
+the external circuit whenever the coil passes through the plane perpendicular
+to the direction of the  magnetic field. Suppose that an
+external DC voltage source 
+({\em e.g.}, a battery, or a DC generator) of emf $V$ is connected across the motor.
+The voltage source drives a steady current $I$ around the external
+circuit, and through the motor. As the current flows around the coil,
+the magnetic field exerts a torque  on the coil, which causes it to rotate.
+Let us suppose that the motor eventually attains  a steady-state rotation
+frequency $f$. The rotating coil generates a back-emf ${\cal E}$ whose
+magnitude is directly proportional to the frequency of rotation [see Eq.~(\ref{e9.32})]. 
+
+\begin{figure}
+\epsfysize=3in
+\centerline{\epsffile{Chapter09/fig9.11.eps}}
+\caption{\em Circuit diagram for an DC motor connected to an external
+DC emf source.}\label{f9.11}
+\end{figure}
+
+Figure~\ref{f9.11} shows the circuit in question. The motor is modeled
+as a resistor $R$, which represents the internal resistance of the
+motor, in series with the back-emf ${\cal E}$. Of course, the back-emf
+acts in the opposite direction to the external emf $V$. Application of Ohm's
+law around the circuit gives
+\begin{equation}
+V = I\,R + {\cal E},
+\end{equation}
+which yields
+\begin{equation}\label{e9.40}
+I = \frac{V-{\cal E}}{R}.
+\end{equation}
+The rate at which the motor performs mechanical work is
+\begin{equation}\label{e9.41}
+P = {\cal E} \,I = \frac{{\cal E} \,(V - {\cal E})}{R}.
+\end{equation}
+
+Suppose that a DC  motor is subject to a  light external load, so that it only
+has to perform mechanical work at a relatively low rate. In this case,
+the motor will spin up until its back-emf ${\cal E}$ is slightly less
+than the external emf $V$, so that very little current flows through the
+motor [according to Eq.~(\ref{e9.40})], and, hence, the mechanical 
+power output of the motor
+is relatively low [according to Eq.~(\ref{e9.41})]. If the load on the motor is
+increased then the motor will slow down, so that its 
+back-emf is reduced, the current flowing through the motor is increased, and,
+hence, the mechanical power output of the motor is raised until
+it matches the new load. Note that the current flowing
+through a DC motor is generally limited  by the back-emf, rather than the
+internal resistance of the motor. In fact, conventional DC motors are designed
+on the assumption that the back-emf will always limit  the current flowing through
+the motor to a relatively small value. If the motor jams, so that the coil stops
+rotating and the back-emf falls to zero, then the current $I=V/R$ which
+flows through the motor is generally so large that it will burn out the motor
+if allowed to flow for any appreciable length of time. For this reason, 
+the  power to an electric motor
+should always be shut off immediately if the motor jams. When a DC motor
+is started up, the coil does not initially spin fast enough to
+generate a substantial back-emf. Thus, there is a short time period,
+just after the motor is switched on, in which the motor draws a relatively
+large current from its power supply. This explains why the lights 
+in a house sometimes
+dim transiently when a large motor, such as 
+an air conditioner motor, is switched on.
+
+Suppose that a DC motor is subject to a constant, but relatively light, load. 
+As mentioned above, the motor will spin up until its back emf almost
+matches the external emf. If the external emf is increased then the motor
+will spin up further, until its back-emf  matches the new external
+emf. Likewise, if the external emf is decreased then the motor will spin down.
+It can be seen that
+the rotation rate of a DC motor is controlled by the
+emf of the DC power supply to which the motor is attached. The higher the emf, the
+higher the  rate of rotation. 
+Thus, it is relatively easy to vary the speed of a DC motor, unlike an
+AC motor, which is essentially a fixed speed motor. 
+
+\subsection{Worked Examples}
+\subsection*{\em Example 9.1: Faraday's law}
+{\em Question:} A plane circular loop of conducting wire of radius $r=10$\,cm which
+possesses $N=15$ turns is placed in a uniform magnetic field. The direction
+of the magnetic field makes an angle of $30^\circ$ with respect to the normal
+direction to the loop. 
+The magnetic field-strength $B$ is increased at a constant
+rate from $B_1=1$\,T to $B_2=5$\,T in a time interval of ${\mit\Delta}t=10$\,s. What
+is the emf generated around the loop? If the electrical resistance of the
+loop is $R=15\,\Omega$, what current flows around the loop as the
+magnetic field is increased? \\
+~\\
+\noindent{\em Answer:} The area of the loop is 
+$$
+A = \pi\,r^2 = \pi\,(0.1)^2 = 0.0314\,{\rm m}^2.
+$$
+The component of the magnetic field perpendicular to the loop is
+$$
+B_\perp = B\,\cos\theta = B\,\cos 30^\circ = 0.8660\,B,
+$$
+where $B$ is the magnetic field-strength. Thus, the initial magnetic
+flux linking the loop is
+$$
+{\mit\Phi}_{B\,1} = N\,A\,B_1\,\cos\theta = (15)\,(0.0314)\,(1)\,(0.8660) = 0.408\,{\rm Wb}.
+$$
+Likewise, the final flux linking the loop is
+$$
+{\mit\Phi}_{B\,2} = N\,A\,B_2\,\cos\theta = 
+(15)\,(0.0314)\,(5)\,(0.8660) = 2.039\,{\rm Wb}.
+$$
+The time rate of change of the flux is
+$$
+\frac{d{\mit\Phi}_B}{dt} = \frac{{\mit\Phi}_{B\,2}- 
+{\mit\Phi}_{B\,1}}{{\mit\Delta}t} = \frac{(2.039-0.408)}{(10)}=0.163\,{\rm Wb\,s}^{-1}.
+$$
+Thus, the emf generated around the loop is
+$$
+{\cal E} = \frac{d{\mit\Phi}_B}{dt} = 0.163\,{\rm V}.
+$$
+Note, incidentally, that one weber per second is equivalent to one volt. 
+
+According to Ohm's law, the current which flows around the loop in response to the
+emf is
+$$
+I = \frac{{\cal E}}{R} = \frac{(0.163)}{(15)} = 0.011\,{\rm A}.
+$$
+
+
+\subsection*{\em Worked Example 2: Lenz's law}
+{\em Question:} A long solenoid with an air core has $n_1=400$ turns per meter
+and a cross-sectional area of $A_1= 10\,{\rm cm}^2$. The current $I_1$ flowing 
+around
+the solenoid increases from 0 to $50\,{\rm A}$ in $2.0\,{\rm s}$. 
+A plane loop of wire consisting of $N_2=10$ turns, which is of cross-sectional area
+$A_2= 100\,{\rm cm}^2$ and resistance $R_2=0.050\,\Omega$, is placed around the
+solenoid close to its centre. The loop is orientated such that
+it lies in the plane perpendicular to the axis
+of the solenoid. 
+What is the magnitude ${\cal E}_2$ of the emf 
+induced 
+in the coil? What current $I_2$ does does this emf drive around the coil? 
+Does this current circulate in the same direction as the current flowing in
+the solenoid, or in the opposite direction?\\
+~\\
+\noindent{\em Answer:} We must, first of all, calculate the magnetic
+flux linking the coil. The magnetic field is confined to the region
+inside the solenoid (the field generated outside a {\em long}\/ solenoid
+is essentially negligible). The magnetic field runs along the axis of the
+solenoid, so it is directed perpendicular to the plane of the coil. Thus,
+the magnetic flux linking a single turn of the coil is the product of the
+area $A_1$ of the magnetic-field-containing region and the strength $B$
+of the perpendicular field. Note that, in this case, the magnetic flux does
+not depend on the area $A_2$ of the coil, as long as the magnetic-field-containing
+region lies completely within the coil. 
+ The magnetic flux ${\mit\Phi}_B$ linking the
+whole coil is the flux linking a single turn times the number $N_2$ of
+turns in the coil. Thus,
+$$
+{\mit\Phi}_B = N_2\,A_1\,B.
+$$
+Now, the magnitude of the magnetic field generated by the solenoid
+is given by (see Sect.~\ref{s8.8}) 
+$$
+B = \mu_0\,n_1\,I_1,
+$$
+so the magnetic flux linking the coil can be written
+$$
+{\mit\Phi}_B = N_2\,A_1\,\mu_0\,n_1\,I_1.
+$$
+This magnetic flux increases because the current $I_1$ flowing in the
+solenoid increases.
+Thus, the time rate of change of the magnetic flux is given by
+\begin{eqnarray}
+\frac{d{\mit\Phi}_B}{dt} = 
+ N_2\,A_1\,\mu_0\,n_1\,\frac{dI_1}{dt}
+&=& (10)\,(10\times10^{-4})\,(4\pi\times 10^{-7}) \,(400)\,\frac{(50)}{(2)}
+\nonumber\\[0.5ex]& =& 
+1.26\times 10^{-4}\,{\rm Wb\,\,s}^{-1}.\nonumber
+\end{eqnarray}
+By Faraday's induction law, the emf generated around the coil is
+$$
+{\cal E}_2 = -\frac{ d{\mit\Phi}_B}{dt} =
+ -1.26\times 10^{-4}\,{\rm V}.
+$$
+
+Ohm's law gives
+$$
+I_2 = \frac{{\cal E}_2}{R_2} = \frac{(-1.26\times 10^{-4})}{(0.050)} = -2.6\,{\rm mA},
+$$
+as the current induced in the coil. 
+
+According to Lenz's law, the current induced  in the coil is such as to 
+oppose the increase in the  magnetic flux linking  the coil. Thus, the current
+in the coil must circulate in the {\em opposite} direction to the current  in
+the solenoid, so that the magnetic field generated by the the former current, in the middle of
+the coil, is oppositely directed to that generated by the latter current.
+The fact that the current $I_2$ in the above formula is {\em negative} 
+is indicative of the fact  that
+this current 
+runs in the opposite direction to the current flowing around the solenoid. 
+
+
+\subsection*{\em Worked Example 3: Motional emf}
+{\em Question:} Consider the circuit described in Sect.~\ref{s9.4}.
+Suppose that the length of the moving rod is $l=0.2$\,m,  its speed
+is $v=0.1\,{\rm m\,s}^{-1}$,  the magnetic field-strength is $B=1.0$\,T 
+(the field is directed into the page---see Fig.~\ref{f9.3}), and the resistance of the circuit is
+$R=0.020\,\Omega$. What is the emf generated around the circuit? What current
+flows around the circuit? What is the magnitude and direction of the force
+acting on the moving rod due to the fact that a current is flowing along it?
+What is the rate at which work must be performed on the rod in order to
+keep it moving at constant velocity against this force? What is the rate at
+which electrical energy is generated? What is the rate at which energy is converted
+into heat due to the resistivity of the circuit?\\
+~\\
+{\em Answer:} The emf is generated by the motion of the rod. According to
+Eq.~(\ref{e9.15}), the magnitude of the motional emf is
+$$
+{\cal E} = B\,l\,v = (1)\,(0.2)\,(0.1) = 0.020\,{\rm V}.
+$$
+The emf acts in the anti-clockwise direction in Fig.~\ref{f9.3}.
+
+The anti-clockwise current driven around the circuit by the motional
+emf follows from Ohm's law:
+$$
+I = \frac{\cal E}{R} = \frac{(0.020)}{(0.020)} = 1.0\,{\rm A}.
+$$
+
+Since the rod carries a current $I$ which flows perpendicular to a magnetic
+field $B$, the force per unit length acting on the rod is 
+$F= I\,B$ (see Sect.~\ref{s8.2}). Thus, the total force acting on the rod is of magnitude
+$$
+f = I\,B\,l = (1)\,(1)\,(0.2) = 0.20\,{\rm N}.
+$$
+This force is directed parallel to the vector ${\bf I}\times {\bf B}$.
+It follows that the force is to the left in Fig.~\ref{f9.3}. In other words, the force {\em opposes} the motion producing the
+emf.
+
+In order to keep the rod moving at a constant velocity, some external
+agent must apply a force to the rod which is equal and opposite to
+the magnetic force described above. Thus, the externally applied force acts to
+the right. 
+The rate $P$ at which work is done
+by this force is the product of the force and the velocity of the rod in the
+direction of this force. Thus,
+$$
+P = f\,v = (0.20)\,(0.10) = 0.020\,{\rm W}.
+$$
+
+Every charge $q$ which circulates around the circuit in the anti-clockwise
+direction acquires the energy $q\,{\cal E}$. The amount of charge per unit
+time which circulates around the circuit is, by definition, equal to the
+current $I$ flowing around the circuit. Thus, the rate at which electric charges
+acquire energy in the circuit is 
+$$
+P = {\cal E}\,I = (0.020)\,(1) = 0.020\,{\rm W}.
+$$
+Now, the rate at which electric charges acquire energy in the circuit is equal
+to the rate at which mechanical work is done on the rod  by the
+external force, as must be the case if energy is to
+be conserved. Thus, we can think of this circuit as constituting a
+primitive  generator which transforms mechanical into electrical
+energy. 
+
+The rate at which electrical energy is converted into heat energy in the
+circuit is
+$$
+P = I^2\,R = (1)\,(1)\,(0.020) = 0.020\,{\rm W}.
+$$
+Thus, all of the mechanical work done on the rod eventually ends up as heat dissipated
+in the circuit.
+
+
+\subsection*{\em Worked Example 4: AC generators}
+{\em Question:} A simple AC generator consists of an $N=10$ turn coil of
+area $A= 1200\,{\rm cm}^2$ which rotates at a constant frequency of
+$f=60$\,Hz in a $B=0.40$\,T magnetic field. What is the peak emf of the device?\\
+~\\
+\noindent{\em Answer:} The peak emf ${\cal E}_{\rm max}$ is given by [see Eq.~(\ref{e9.24})]
+$$
+{\cal E}_{\rm max} = 2\pi\,N\,B\,A\,f = (6.283)\,(10)\,(0.40)\,(0.12)\,(60) = 181 \,{\rm V}.
+$$
+
+\subsection*{\em Worked Example 5: AC motors}
+{\em Question:} An AC motor has an internal resistance of $R=4.0\,\Omega$. When
+powered by a $50\,{\rm Hz}$ AC supply of peak voltage $V=120\,{\rm V}$ it draws a peak current of
+$I=5.0\,{\rm A}$. What is the peak back-emf produced by the motor? What  is the peak power
+delivered to the motor by the AC supply? What is the peak rate of energy loss as heat in the 
+motor? What is the peak useful power  produced by the motor? What is the efficiency
+({\em i.e.}, the ratio of the peak useful power output to the peak power delivered)
+of such a motor?\\
+~\\
+\noindent{\em Answer:} If $V$ is the peak applied voltage, and ${\cal E}$ 
+the peak back-emf, then the peak applied voltage must equal the sum of the peak voltage
+drops across the motor, or $V = {\cal E} + I\,R$. It follows that
+$$
+{\cal E} = V - I\,R = (120) - (5.0)\,(4.0) = 100\,{\rm V}.
+$$
+The peak power delivered by the AC supply is
+$$
+P_1 = V\,I = (120)\,(5.0) = 600\,{\rm W}.
+$$
+Energy is lost as heat in the motor at the peak rate
+$$
+P_2 = I^2\,R = (5.0)^2\,(4.0) = 100\,{\rm W}.
+$$
+The peak useful power produced by the motor is the difference between the
+peak power supplied to the motor and the peak power dissipated as heat:
+$$
+P = P_1 - P_2 = (600) - (100) = 500\,{\rm W}.
+$$
+The peak useful power is also given by the product of the peak back-emf and
+the peak current flowing through the motor [see Eq.~(\ref{e9.37})],
+$$
+P= {\cal E}\,I = (100)\,(5.0) = 500\,{\rm W}.
+$$
+The efficiency $\eta$ is the ratio of the peak useful power output of the motor
+to the peak  power supplied, or
+$$
+\eta = \frac{P}{P_1} = \frac{500}{600} = 0.83 = 83\,\%.
+$$

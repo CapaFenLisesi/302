@@ -1,0 +1,549 @@
+\section{Vectors}\label{vector}
+
+\subsection{Vector Algebra}
+\begin{figure}[b]
+\epsfysize=1.5in
+\centerline{\epsffile{Chapter02/fig2.1.eps}}
+\caption{\em A directed line element.}\label{fig1}
+\end{figure}
+In applied mathematics, physical quantities are (predominately) represented by two distinct classes
+of objects. Some quantities, denoted {\em scalars}, are represented by {\em real
+numbers}. Others, denoted {\em vectors}, are represented by 
+ directed line elements in space: {\em e.g.},
+$\stackrel{\displaystyle \rightarrow}{PQ}$ in see Fig.~\ref{fig1}.
+ Note that line elements
+(and, therefore, vectors) are movable, and do not carry intrinsic position information: {\em i.e.}, in Fig.~\ref{fig2}, $\stackrel{\displaystyle \rightarrow}{PS}$ and  $\stackrel{\displaystyle \rightarrow}{QR}$
+are considered to be the {\em same}\/ vector.
+In fact, vectors just possess a magnitude and a direction, whereas scalars possess
+a magnitude but no direction.
+By convention, vector quantities are denoted by bold-faced characters ({\em e.g.},
+${\bf a}$) in 
+typeset documents. 
+Vector addition
+can be represented using a parallelogram: {\em e.g.}, $\stackrel{\displaystyle \rightarrow}{PR}
+\,=\,
+\stackrel{\displaystyle \rightarrow}{PQ}+ \stackrel{\displaystyle \rightarrow}{QR}$  in Fig.~\ref{fig2}. $\stackrel{\displaystyle \rightarrow}{PR}$ is said to be the {\em resultant}\/ of $\stackrel{\displaystyle \rightarrow}{PQ}$ and $\stackrel{\displaystyle \rightarrow}{QR}$.
+Suppose that ${\bf a}\equiv  \,\stackrel{\displaystyle \rightarrow}{PQ}\,\equiv\,\stackrel{\displaystyle \rightarrow}{SR}$,
+${\bf b} \,\equiv \,\stackrel{\displaystyle \rightarrow}{QR}\,\equiv
+\,\stackrel{\displaystyle \rightarrow}{PS}$, and ${\bf c} \equiv
+ \,\stackrel{\displaystyle \rightarrow}{PR}$. It follows,
+from Fig.~\ref{fig2}, that vector addition is
+{\em commutative}: {\em i.e.}, ${\bf a} + {\bf b} = {\bf b}+{\bf a}$
+(since $\stackrel{\displaystyle \rightarrow}{PR}$ is also the resultant
+of $\stackrel{\displaystyle \rightarrow}{PS}$ and $\stackrel{\displaystyle \rightarrow}{SR}$). It can also
+be shown that the {\em associative}\/ law  holds: {\em i.e.}, ${\bf a} +
+ ({\bf b} + {\bf c}) = ({\bf a} + {\bf b}) + {\bf c}$.
+\begin{figure}
+\epsfysize=2.5in
+\centerline{\epsffile{Chapter02/fig2.2.eps}}
+\caption{\em Vector addition.}\label{fig2}
+\end{figure}
+
+There are two  general approaches to vector analysis. The {\em geometric}\/ approach is
+based on drawing line elements in space,  and then making use
+of the theorems of Euclidian geometry. The {\em coordinate}\/ approach assumes that
+space is defined by Cartesian coordinates, and uses these to characterize vectors.
+In Physics, we generally
+adopt the second approach, because it is far more convenient.
+
+In the coordinate approach, a vector is  denoted as the row matrix of
+its components along each of the Cartesian axes (the $x$-, $y$-, and $z$-axes, say):
+\begin{equation}
+{\bf a} \equiv (a_x,\, a_y,\, a_z).
+\end{equation}
+Here, $a_x$ is the $x$-coordinate of the ``head'' of the vector minus
+the $x$-coordinate of its ``tail,'' {\em etc}.
+If ${\bf a} \equiv (a_x, a_y, a_z)$ and ${\bf b} \equiv (b_x, b_y, b_z)$
+then vector addition is defined
+\begin{equation}
+{\bf a} + {\bf b} \equiv (a_x+b_x,\, a_y+b_y,\, a_z+b_z).
+\end{equation}
+If ${\bf a}$ is a vector and $n$ is a scalar then the product 
+of a scalar and a vector is defined
+\begin{equation}
+n\,{\bf a} \equiv (n\,a_x,\, n\,a_y,\, n\,a_z).
+\end{equation}
+The vector $n\,{\bf a}$ is interpreted as a vector which points
+in the same direction as ${\bf a}$ (or in the opposite
+direction, if $n<0$), and is $|n|$ times as long as ${\bf a}$.
+It is clear that vector algebra is {\em distributive} with respect to
+scalar multiplication: {\em i.e.},  $n\,({\bf a} + {\bf b}) = n\,{\bf a} + n\,{\bf b}$. 
+
+Unit vectors can be defined in the $x$-, $y$-, and $z$-directions as
+${\bf e}_x \equiv (1,0,0)$, ${\bf e}_y \equiv (0,1,0)$, and ${\bf e}_z \equiv
+(0,0,1)$. Any vector can be written in terms of these unit vectors: {\em i.e.},
+\begin{equation}
+{\bf a} = a_x\, {\bf e}_x + a_y \,{\bf e}_y + a_z\,{\bf e}_z.
+\end{equation}
+In mathematical terminology,
+three vectors used in this manner form a {\em basis}\/ of the vector space. If the
+three vectors are mutually perpendicular then they are termed {\em orthogonal basis
+vectors}. However, any set of three non-coplanar vectors can be used as basis
+vectors.
+
+Examples of vectors in Physics are displacements from an origin,
+\begin{equation}
+{\bf r} = (x,\, y,\, z),
+\end{equation}
+and velocities,
+\begin{equation}
+{\bf v} = \frac{d {\bf r}}{dt} = \lim_{\delta t\rightarrow 0} 
+\frac{ {\bf r}(t+\delta t) - {\bf r}(t) }{\delta t}.
+\end{equation}
+
+\begin{figure}
+\epsfysize=2in
+\centerline{\epsffile{Chapter02/fig2.3.eps}}
+\caption{\em Rotation of the basis about the $z$-axis.}\label{f3}
+\end{figure}
+Suppose that we transform to a new orthogonal basis, the $x'$-, $y'$-, and $z'$-axes,
+which are related to the $x$-, $y$-, and $z$-axes via  a rotation through an angle
+$\theta$ around the $z$-axis---see Fig.~\ref{f3}.
+In the new basis, the coordinates of the general displacement ${\bf r}$ from the
+origin are $(x', y', z')$. These coordinates are related to the previous
+coordinates via the transformation
+\begin{eqnarray}
+x' &=& x\cos\theta + y\sin \theta,\label{t1}\\[0.5ex]
+y' &=& -x\sin\theta + y\cos\theta,\\[0.5ex]
+z' &=& z.\label{t3}
+\end{eqnarray}
+Now, we do not need to change our notation for the displacement in the new basis.
+It is still denoted ${\bf r}$. The reason for this is that the magnitude and
+direction of ${\bf r}$ are {\em independent}\/ of the choice of basis vectors. The
+coordinates of ${\bf r}$ {\em do}\/ depend on the choice of basis vectors.
+However, they must depend in a very specific manner [{\em i.e.}, Eqs.~(\ref{t1})--(\ref{t3})] which
+preserves the magnitude and direction of ${\bf r}$.
+
+Since any vector can be represented as a displacement from an origin
+(this is just a special case of a directed line element), it follows that
+the 
+components of a general vector ${\bf a}$ must transform in an similar
+manner to Eqs.~(\ref{t1})--(\ref{t3}). Thus,
+\begin{eqnarray}
+a_{x'} &=& a_x\cos\theta + a_y\sin \theta,\label{tt1}\\[0.5ex]
+a_{y'} &=& -a_x\sin\theta + a_y\cos\theta,\\[0.5ex]
+a_{z'} &=& a_z,\label{tt3}
+\end{eqnarray}
+with analogous transformation rules for rotation about the $y$- and $z$-axes.
+In the coordinate approach, Eqs.~(\ref{tt1})--(\ref{tt3}) constitute the {\em definition} of a vector.
+ The three
+quantities ($a_x$, $a_y$, $a_z$) are the components of a vector provided that
+they transform under rotation like Eqs.~(\ref{tt1})--(\ref{tt3}). 
+Conversely, ($a_x$, $a_y$, $a_z$) {\em cannot} be the components of a vector if they
+do not transform like Eqs.~(\ref{tt1})--(\ref{tt3}). Scalar quantities are {\em invariant}
+ under transformation.
+Thus, the individual components of a vector ($a_x$, say) are real numbers, but 
+they are
+{\em not}\/ scalars.
+Displacement vectors, and all vectors derived from
+displacements, automatically satisfy Eqs.~(\ref{tt1})--(\ref{tt3}). There are, however, other
+physical quantities which have both magnitude and direction, but which are not
+obviously related to displacements. We need to check carefully to see whether these
+quantities are vectors. 
+
+\subsection{Vector Area}\label{sect22}
+\begin{figure}
+\epsfysize=2in
+\centerline{\epsffile{Chapter02/fig2.4.eps}}
+\caption{\em A vector area.}\label{f4}
+\end{figure}
+Suppose that we have a plane surface of scalar area $S$. We can define a vector
+area ${\bf S}$ whose magnitude is $S$, and whose direction is perpendicular to
+the plane, in the sense determined  by a right-hand grip rule on the rim---see Fig.~\ref{f4}.
+This quantity clearly possesses both magnitude and direction. But is it a true
+vector? Well, we know that if the normal to the surface makes an angle $\alpha_x$ with
+the $x$-axis then the area seen looking along the $x$-direction is $S\,\cos\alpha_x$.
+Let this be the $x$-component of ${\bf S}$.
+Similarly, if the normal makes an angle $\alpha_y$ with the $y$-axis then the
+area seen looking along the $y$-direction is $S\,\cos\alpha_y$. 
+Let this be the $y$-component of ${\bf S}$. If we limit ourselves to a surface whose
+normal is perpendicular to the $z$-direction then $\alpha_x = \pi/2-\alpha_y=\alpha$.
+It follows that ${\bf S} = S\,(\cos\alpha,\, \sin\alpha,\, 0)$. If we rotate the
+basis about the
+$z$-axis by $\theta$ degrees, which is equivalent to rotating the normal to
+the surface about the $z$-axis by $-\theta$ degrees, then
+\begin{equation}\label{e29}
+S_{x'} = S\,\cos\,(\alpha-\theta) = S\,\cos\alpha\,\cos\theta + S\,\sin\alpha\,\sin\theta
+= S_x\,\cos\theta + S_y\,\sin\theta,
+\end{equation}
+which is the correct transformation rule for the $x$-component of a vector. The
+other components transform correctly as well. This  proves
+that a vector area is a
+true vector.
+
+According to the vector addition theorem, the projected area of two plane surfaces,
+joined together at a line, 
+looking along the $x$-direction (say) is the $x$-component of the resultant of the vector areas of the two surfaces.
+Likewise, for many joined-up plane areas, the projected area in the $x$-direction,
+which is the same as the projected area of the {\em rim}\/ in the $x$-direction, is the
+$x$-component  of the resultant of all the vector areas: {\em i.e.}, 
+\begin{equation}
+{\bf S} = \sum_i {\bf S}_i.
+\end{equation}
+If we approach a limit,
+by letting the number of plane facets increase, and their areas reduce, then we
+obtain a continuous surface denoted by the resultant vector area
+\begin{equation}
+ {\bf S} = \sum_i \delta  {\bf S}_i.
+\end{equation}
+It is
+clear that the projected area of the rim in the $x$-direction is just $S_x$. 
+Note that the vector area of a given surface is completely determined by its
+rim. So, two different surfaces sharing the same rim both possess the {\em same}\/
+vector area. 
+
+In conclusion, a loop (not all in one plane) has a vector area ${\bf S}$ which
+is the resultant of the vector areas of any surface ending on the loop. The
+components  of ${\bf S}$ are the projected areas of the loop in the
+directions of  the basis vectors. As a corollary, a closed surface has ${\bf S} = {\bf 0}$,
+since it does not possess a rim. 
+
+\subsection{The Scalar Product}
+A scalar quantity is invariant under all possible rotational transformations.
+The individual components of a vector are not scalars because they change under
+transformation. Can we form a scalar out of some combination of the components
+of one, or more, vectors? Suppose that we were to define the
+``ampersand''  product,
+\begin{equation}
+{\bf a}\,\&\,{\bf b} = a_x \,b_y + a_y \,b_z + a_z \,b_x = {\rm scalar~number},
+\end{equation}
+for general vectors ${\bf a}$ and ${\bf b}$. Is ${\bf a}\,\&\,{\bf b}$ 
+invariant under transformation, as must be the case if it is a scalar number?
+Let us consider an example. Suppose that ${\bf a} = (1,\,0,\,0)$ and
+${\bf b} = (0,\,1,\,0)$. It is easily seen that ${\bf a}\,\&\,{\bf b}= 1$. Let
+us now rotate the basis through $45^\circ$ about the $z$-axis. In the new
+basis, ${\bf a} = (1/\sqrt{2},\, -1/\sqrt{2},\, 0)$ and ${\bf b} = (1/\sqrt{2},\,
+1/\sqrt{2},\, 0)$, giving ${\bf a}\,\&\,{\bf b} = 1/2$. Clearly, ${\bf a}\,\&\,{\bf b}$
+is {\em not} invariant under rotational transformation, so 
+the above definition is a bad one.
+
+Consider, now, 
+the {\em dot product} or {\em scalar product},
+\begin{equation}
+{\bf a} \cdot {\bf b} = a_x \,b_x + a_y \,b_y + a_z \,b_z =  {\rm scalar~number}.
+\end{equation}
+Let us rotate the basis though $\theta$ degrees about the $z$-axis. According to
+Eqs.~(\ref{tt1})--(\ref{tt3}), in the new basis ${\bf a} \cdot {\bf b}$ takes the form
+\begin{eqnarray}
+ {\bf a} \cdot {\bf b} &= &(a_x\, \cos\theta+a_y\,\sin\theta)\,(b_x\,\cos\theta + b_y\,\sin\theta)\nonumber\\[0.5ex]
+&&+(-a_x\,\sin\theta + a_y\,\cos\theta)\,(-b_x\,\sin \theta + b_y\,\cos\theta)
++a_z\, b_z\nonumber\\[0.5ex]
+&= &a_x\, b_x + a_y\, b_y + a_z\, b_z.
+\end{eqnarray}
+Thus, 
+${\bf a} \cdot {\bf b}$ {\em is} invariant under rotation about the $z$-axis. It can easily
+be shown that it is also invariant under rotation about the $x$- and $y$-axes.
+Clearly, ${\bf a} \cdot {\bf b}$ is a true scalar, so the above definition is
+a good one. Incidentally, ${\bf a} \cdot {\bf b}$ is the {\em only}
+simple  combination of
+the components of two vectors which transforms like a scalar. It is easily
+shown that the dot product  is commutative  and distributive:
+\begin{eqnarray}
+{\bf a} \cdot {\bf b} &=& {\bf b} \cdot {\bf a},\nonumber\\[0.5ex] 
+{\bf a}\cdot({\bf b}+{\bf c}) &=& {\bf a} \cdot {\bf b} + {\bf a}\cdot {\bf c}.
+\end{eqnarray}
+The associative property is meaningless for the dot product, because we cannot
+have $({\bf a}\cdot{\bf b}) \cdot{\bf c}$, since  ${\bf a}\cdot{\bf b}$ is scalar.
+
+We have shown that the dot product ${\bf a} \cdot {\bf b}$ is coordinate independent.
+But what is the physical significance of this? Consider the special case
+where ${\bf a} = {\bf b}$. Clearly,
+\begin{equation}
+{\bf a} \cdot {\bf b} = a_x^{~2}+a_y^{~2} + a_z^{~2} = {\rm Length}~(OP)^2,
+\end{equation}
+if ${\bf a}$ is the position vector of $P$ relative to the origin $O$. 
+So, the invariance of ${\bf a} \cdot {\bf a}$ is equivalent to the invariance 
+of the length, or magnitude, of  vector ${\bf a}$ under transformation. The length of
+ vector ${\bf a}$ is usually denoted $|a|$ (``the  modulus of $a$'') or sometimes
+just $a$, so
+\begin{equation}
+{\bf a} \cdot {\bf a} = |a|^2  = a^2.
+\end{equation}
+
+\begin{figure}[h]
+\epsfysize=1.75in
+\centerline{\epsffile{Chapter02/fig2.5.eps}}
+\caption{\em A vector triangle.}\label{f5}
+\end{figure}
+Let us now investigate the general case. The length squared of $AB$ in Fig.~\ref{f5} is
+\begin{equation}
+({\bf b} - {\bf a} ) \cdot ({\bf b} - {\bf a} ) = |a|^2 + |b|^2 - 2\,{\bf a} \cdot
+{\bf b}.
+\end{equation}
+However, according to the ``cosine rule'' of trigonometry,
+\begin{equation}
+(AB)^2 = (OA)^2 + (OB)^2 - 2 \,(OA)\,(OB)\,\cos\theta,
+\end{equation}
+where $(AB)$ denotes the length of side $AB$. It follows that
+\begin{equation}
+{\bf a} \cdot {\bf b} = |a|\, |b|\, \cos\theta.
+\end{equation}
+Clearly, the invariance of ${\bf a} \cdot {\bf b}$ under transformation is equivalent
+to the invariance of the angle subtended between the two vectors. Note that
+if ${\bf a} \cdot {\bf b} =0$ then either $|a|=0$, $|b|=0$, or the vectors
+$\bf a$ and $\bf b$ are mutually perpendicular. The angle $\theta$ subtended between two vectors
+can easily be obtained from the dot product: {\em i.e.}, 
+\begin{equation}
+\cos\theta = \frac{{\bf a} \cdot {\bf b}}{|a| \,|b| }.
+\end{equation}
+Note that $a_x=a\,\cos\theta_x$, {\em etc.}, where $\theta_x$ is
+the angle subtended between vector ${\bf a}$ and the $x$-axis.
+
+The work $W$ performed by a constant force $\bf F$ which moves an object through a displacement $\bf r$
+is the product of the magnitude of $\bf F$ times the displacement in the direction
+of $\bf F$. So, if the angle subtended between  $\bf F$ and $\bf r$ is $\theta$ then
+\begin{equation}\label{e2.26}
+W = |F| \,(|r|\,\cos\theta) = {\bf F}\cdot {\bf r}.
+\end{equation}
+
+\subsection{The Vector Product}
+We have discovered how to construct a scalar from the components of two
+general vectors $\bf a$ and $\bf b$. Can we also construct a vector which is not
+just a linear combination of $\bf a$ and $\bf b$? Consider the following definition:
+\begin{equation}
+{\bf a} \,{\rm x}\, {\bf b} = (a_x \,b_x,\, a_y\, b_y,\, a_z \,b_z).
+\end{equation}
+Is ${\bf a} \,{\rm x}\, {\bf b}$ a proper vector? Suppose  that ${\bf a} =
+(1,\,0,\,0)$ and ${\bf b} = (0,\,1,\,0)$. Clearly,  ${\bf a} \,{\rm x}\, {\bf b}= {\bf 0}$.
+However, if we rotate the basis through $45^\circ$ about the $z$-axis then
+${\bf a} = (1/\sqrt{2},\, -1/\sqrt{2},\, 0)$, ${\bf b} = (1/\sqrt{2},\, 1/\sqrt{2},\,0)$,
+and ${\bf a}\, {\rm x}\, {\bf b} = (1/2,\, -1/2,\,0)$. Thus, ${\bf a}\, {\rm x}\, {\bf b}$ does
+not transform like a vector, because its magnitude depends on the choice of axes.
+So, above definition is a bad one.
+
+Consider, now, the {\em cross product} or {\em vector product},
+\begin{equation}
+{\bf a}\times{\bf b} = (a_y \, b_z-a_z\, b_y,\, a_z\, b_x - a_x\, b_z,\, a_x\, b_y - a_y\, b_x)
+={\bf c}.
+\end{equation}
+Does this rather unlikely combination transform like a vector? Let us try
+rotating the basis through $\theta$ degrees about the $z$-axis using Eqs.~(\ref{tt1})--(\ref{tt3}).
+In the new basis,
+\begin{eqnarray}
+c_{x'} &= &(-a_x\, \sin\theta + a_y\,\cos\theta)\,b_z - a_z\,(-b_x\, \sin\theta + b_y\,\cos\theta)
+\nonumber\\[0.5ex]
+&=& (a_y\, b_z - a_z\, b_y)\, \cos\theta + (a_z\, b_x-a_x\, b_z)\,\sin\theta\nonumber\\[0.5ex]
+& =& c_x\,\cos\theta
++c_y\,\sin\theta.
+\end{eqnarray}
+Thus, the $x$-component of ${\bf a}\times{\bf b}$ transforms correctly. It can
+easily  be shown that the other components transform correctly as well, and that
+all components also transform correctly under rotation about the $y$- and $z$-axes. 
+Thus, ${\bf a}\times {\bf b}$ is a proper vector. Incidentally, ${\bf a}\times {\bf b}$
+is the {\em only}\/ simple combination of the components of two vectors which transforms
+like a vector (which is non-coplanar with ${\bf a}$ and ${\bf b}$).
+ The cross product is 
+{\em anticommutative},
+\begin{equation}
+{\bf a}\times{\bf b} = - {\bf b} \times{\bf a},
+\end{equation}
+distributive,
+\begin{equation}
+{\bf a}\times({\bf b} +{\bf c})=  {\bf a} \times{\bf b}+{\bf a}\times{\bf c},
+\end{equation}
+but is {\em not}\/ associative:
+\begin{equation}
+{\bf a}\times({\bf b} \times{\bf c})\neq ({\bf a}\times{\bf b}) \times{\bf c}.
+\end{equation}
+Note that ${\bf a}\times {\bf b}$ can be written in the convenient, and easy
+to remember, determinant form
+\begin{equation}
+{\bf a}\times {\bf b} = \left|\begin{array}{ccc}
+{\bf e}_x&{\bf e}_y&{\bf e}_z\\[0.5ex]
+a_x& a_y& a_z\\[0.5ex]
+b_x & b_y & b_z\end{array}\right|.
+\end{equation}
+
+The cross product  transforms like a vector, which
+means that it must have  a well-defined direction and magnitude. We can show
+that ${\bf a}\times{\bf b}$ is {\em perpendicular} to both ${\bf a}$ and ${\bf b}$.
+Consider ${\bf a}\cdot {\bf a}\times{\bf b}$. If this is zero then the cross product
+must be perpendicular to ${\bf a}$. Now
+\begin{eqnarray}
+{\bf a}\cdot {\bf a}\times{\bf b} &= &a_x\,(a_y\, b_z-a_z\, b_y) + a_y\, (a_z\, b_x- a_x \,b_z)
++a_z\,(a_x \,b_y - a_y\, b_x)\nonumber\\[0.5ex]
+&=& 0.
+\end{eqnarray}
+Therefore, ${\bf a}\times {\bf b}$ is perpendicular to ${\bf a}$. Likewise, it can
+be demonstrated that ${\bf a}\times{\bf b}$ is perpendicular to ${\bf b}$. 
+The vectors $\bf a$, $\bf b$, and ${\bf a}\times{\bf b}$ form a {\em right-handed}
+set, like the unit vectors ${\bf e}_x$, ${\bf e}_y$, and ${\bf e}_z$. In fact,  ${\bf e}_x\times
+{\bf e}_y={\bf e}_z$. This defines a unique direction for ${\bf a}\times{\bf b}$, which
+is obtained from a right-hand rule---see Fig.~\ref{f6}.
+\begin{figure}
+\epsfysize=2in
+\centerline{\epsffile{Chapter02/fig2.6.eps}}
+\caption{\em The right-hand rule for cross products.}\label{f6}
+\end{figure}
+
+Let us now evaluate the magnitude of ${\bf a}\times {\bf b}$. We have
+\begin{eqnarray}
+({\bf a}\times{\bf b})^2 &=& (a_y \,b_z-a_z\, b_y)^2 +(a_z \,b_x - a_x\, b_z)^2 +(a_x \,b_z
+-a_y \,b_x)^2\nonumber\\[0.5ex]
+&=& (a_x^{~2}+a_y^{~2}+a_z^{~2})\,(b_x^{~2}+b_y^{~2}+b_z^{~2}) -
+(a_x\, b_x + a_y \,b_y + a_z\, b_z)^2\nonumber\\[0.5ex]
+&=& |a|^2 \,|b|^2 - ({\bf a}\cdot {\bf b})^2\nonumber\\[0.5ex]
+&=& |a|^2 \,|b|^2 - |a|^2 \,|b|^2 \,\cos^2\theta = |a|^2\,|b|^2\, \sin^2\theta.
+\end{eqnarray}
+Thus,
+\begin{equation}
+|{\bf a}\times{\bf b}| = |a|\,|b|\,\sin\theta.
+\end{equation}
+Clearly, ${\bf a}\times{\bf a} = {\bf 0}$ for any vector, since $\theta$ is always
+zero in this case. Also, if ${\bf a}\times{\bf b} = {\bf 0}$ then either
+$|a|=0$, $|b|=0$, or ${\bf b}$ is parallel (or antiparallel) to ${\bf a}$.
+
+Suppose that a force ${\bf F}$ is applied at position ${\bf r}$---see Fig.~\ref{f8}.
+The moment, or torque, about the origin $O$ is the product of the magnitude of the force and
+the length of the lever arm $OQ$. Thus, the magnitude of the moment is
+$|F|\,|r|\,\sin\theta$. The direction of the moment is conventionally the direction of
+the axis through $O$ about which the force tries to rotate objects, in the sense
+determined by a right-hand grip rule. It follows that the vector moment is
+given by
+\begin{equation}
+{\bf M} = {\bf r}\times{\bf F}.
+\end{equation}
+\begin{figure}
+\epsfysize=2.5in
+\centerline{\epsffile{Chapter02/fig2.8.eps}}
+\caption{\em A torque.}\label{f8}
+\end{figure}
+
+\subsection{Vector Calculus} 
+Suppose that  vector ${\bf a}$ varies with time, so that ${\bf a} = {\bf a} (t)$. The time
+derivative of the vector is defined
+\begin{equation}
+\frac{d {\bf a}}{dt} = \lim_{\delta t\rightarrow 0} \left[\frac{{\bf a}(t+\delta t) - {\bf a}(t)}
+{\delta t}\right].
+\end{equation}
+When written out in component form this becomes
+\begin{equation}
+\frac{d {\bf a}}{dt} = \left(\frac{d a_x}{dt}, \frac{d a_y}{d t}, \frac{d a_z}{ d t}\right).
+\end{equation} 
+
+Suppose that ${\bf a}$ is, in fact, the product of a scalar $\phi(t)$ and another vector
+${\bf b}(t)$. What now is the time derivative of ${\bf a}$? We have
+\begin{equation}
+\frac{d a_x}{dt} = \frac{d}{dt}\!\left(\phi\, b_x\right) = \frac{d\phi}{dt}\, b_x + \phi \,
+\frac{d b_x}{dt},
+\end{equation}
+which implies that
+\begin{equation}
+\frac{d {\bf a}}{dt} = \frac{d\phi}{dt}\, {\bf b} + \phi\, \frac{d {\bf b}}{dt}.
+\end{equation}
+
+It is easily demonstrated that 
+\begin{equation}
+\frac{d}{dt}\left({\bf a}\cdot{\bf b}\right) = \frac{d{\bf a}}{dt}\cdot {\bf b} +{\bf a}\cdot\frac{d{\bf b}}{dt}.
+\end{equation}
+Likewise,
+\begin{equation}
+\frac{d}{dt}\left({\bf a}\times{\bf b}\right) = \frac{d{\bf a}}{dt}\times{\bf b} + {\bf a}\times
+\frac{d{\bf b}}{dt}.
+\end{equation}
+
+It can be seen that the laws of vector differentiation are fairly analogous to those in 
+conventional calculus.
+
+\subsection{Line Integrals}
+A {\em vector field}\/ is defined as a set of vectors associated with each point in space.
+For instance, the velocity ${\bf v}({\bf r})$ in a moving liquid 
+({\em e.g.}, a whirlpool) constitutes
+a vector field. By analogy, a {\em scalar field} is a set of scalars associated with each
+point in space. An example of a scalar field is the temperature distribution $T({\bf r})$ in
+a furnace. 
+
+Consider a general vector field ${\bf A}({\bf r})$. Line integrals of the form
+\begin{equation}
+\int_P^Q {\bf A}\cdot d{\bf r} = \int_P^Q (A_x\,dx+A_y\,dy + A_z\,dz),
+\end{equation}
+evaluated on some particular path taken between two fixed points $P$ and $Q$,
+often arise in Physics. Here $d{\bf r} = (dx,dy,dz)$ is
+a path element. The path
+might be specified as $x=f(l)$, $y=g(l)$, and $z=h(l)$, where
+$f$, $g$, $h$ are mathematical functions, and $l$ is a parameter (such as path-length) which varies monotonically
+along the path.  It follows that $d{\bf r} = (df/dl, dg/dl, dh/dl)\,dl$.
+In particular, if ${\bf A}({\bf r})$ is a force-field then the line integral is the work done by the force in going between points
+$P$ and $Q$ along the given path [{\em cf.}, Eq.~(\ref{e2.26})]. 
+Finally, if the path is a closed loop ({\em i.e.}, if $P$ and $Q$ are the same point) then the integral is conventionally written
+\begin{equation}
+\oint {\bf A}\cdot d{\bf r}.
+\end{equation}
+
+As an example of a path integral, consider the work done in a repulsive, inverse-square, 
+central field, ${\bf F} = - {\bf r}/ |r^3|$. The 
+element of work done  is $dW={\bf F}\cdot d{\bf r}$. 
+Take $P=(\infty, 0, 0)$ and $Q=(a,0,0)$. Route 1 is along the $x$-axis, so 
+\begin{equation}
+W = \int_{\infty}^a \left(-\frac{1}{x^2}\right)\,dx = \left[\frac{1}{x}\right]_{\infty}^a
+=\frac{1}{a}.
+\end{equation}
+The second route is, firstly, around a large circle ($r=$ constant) to the point
+($a$, $\infty$, 0), and then parallel to the $y$-axis---see Fig.~\ref{f2.14}. In the first, part no work is 
+done,
+since ${\bf F}$ is perpendicular to $d{\bf r}$. In the second part,
+\begin{equation}
+W = \int_{\infty}^0 \frac{-y\,dy}{(a^2 + y^2)^{3/2}} = \left[\frac{1}{(y^2+a^2)^{1/2}}
+\right]^0_\infty = \frac{1}{a}.
+\end{equation}
+In this case, the integral is independent of the path taken between the beginning and end points. However, not all line integrals
+are path independent. Indeed, there are two different classes of
+line integral---those whose values  only depend on the end points, and
+those whose values depend both on  the end points and the path taken
+between these points.
+
+\begin{figure}
+\epsfysize=2.5in
+\centerline{\epsffile{Chapter02/fig2.14.eps}}
+\caption{\em An example line integral.}\label{f2.14}
+\end{figure}
+
+\subsection{Surface Integrals}
+Surface integrals often arise in Physics. For instance, the rate of
+flow of a liquid of velocity ${\bf v}$ through an infinitesimal
+ surface of vector area $d{\bf S}$
+is ${\bf v} \cdot d{\bf S}$ ({\em i.e.}, the product of the normal component of the velocity, $v\,\cos\theta$, and the magnitude of the area, $dS$, where $\theta$ is the angle subtended between ${\bf v}$ and $d {\bf S}$). The net rate of flow through a surface $S$ made up
+of
+very many infinitesimal surfaces is 
+\begin{equation}
+\int_{S} {\bf v}\cdot d{\bf S} = \lim_{d{\bf S}\rightarrow 0}\left[ \sum v\,\cos\theta
+\,dS\right],
+\end{equation}
+where $\theta$ is the angle subtended between a surface element $d{\bf S}$ and the local
+flow velocity ${\bf v}({\bf r})$. If the surface is closed, and the surface elements all point outward, then the integral is conventionally written
+\begin{equation}
+\oint_{S} {\bf v}\cdot d{\bf S}.
+\end{equation}
+In this case, the integral is often termed the {\em flux}\/ of the velocity field
+${\bf v}$ out of the closed surface $S$.
+
+\subsection{Volume Integrals}
+A volume integral takes the form
+\begin{equation}
+\int_V F(x,y,z)\,dV,
+\end{equation}
+where $F$ is a three-dimensional mathematical function, $V$  some volume in space, and $dV = dx \,dy \,dz$ an element of this volume. The
+volume element is sometimes written $d^3{\bf r}$. 
+
+As an example
+of a volume integral, let us evaluate the centre of gravity of a solid hemisphere
+of radius $a$ (centered on the origin). 
+The height of the centre of gravity is given by
+\begin{equation}
+\overline{z} = \left. \int_V z\,dV\right/ \int_V dV.
+\end{equation}
+The bottom integral is simply the volume of the hemisphere, which is $2\pi \,a^3/3$.
+The top integral is most easily evaluated in spherical polar coordinates ($r$, $\theta$, $\phi$), for which
+$z= r\,\cos\theta$ and $dV = r^2\,\sin\theta\,dr\,d\theta\,d\phi$. Thus,
+\begin{eqnarray}
+\int_V z\,dV &= &\int_0^a dr\int_0^{\pi/2} d\theta \int_0^{2\pi} d\phi\,\,r\,\cos\theta\,
+\,
+r^2 \sin\theta\nonumber\\[0.5ex]
+&=& \int_0^a r^3\,dr \int_0^{\pi/2} \sin\theta \,\cos\theta\,d\theta \int_0^{2\pi}
+d\phi = \frac{\pi \,a^4}{4},
+\end{eqnarray}
+giving
+\begin{equation}
+\overline{z} = \frac{ \pi \,a^4}{4}\frac{3}{2\pi \,a^3}= \frac{3\,a}{8}.
+\end{equation}
+
